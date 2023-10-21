@@ -54,6 +54,7 @@ body {
     list-style: none;
     display: flex;
     gap: 20px;
+    margin-right: 10px;
 }
 
 .menu-items li a {
@@ -115,6 +116,7 @@ body {
 }
 
 .page-section h1 {
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
     color: #FFFFFF;
 }
 

@@ -34,6 +34,19 @@
             <button onclick="exportToDOCX()">Export to DOCX</button>
         </section>
     </div>
-    <script src="script.js"></script>
+
+    <script src="script.js"
+        
+        <script>
+        function showNextPage(pageNumber) {
+            // Hide all pages
+            for (let i = 1; i <= 3; i++) {
+                document.getElementById('page' + i).style.display = 'none';
+            }
+            
+            // Show the specified page
+            document.getElementById('page' + pageNumber).style.display = 'block';
+        }
+    </script>
 </body>
 </html>

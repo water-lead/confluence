@@ -85,6 +85,14 @@ body {
     color: #FFFFFF;
 }
 
+@font-face {
+    font-family: 'Apricot';
+    src: url('https://raw.githubusercontent.com/water-lead/confluence/main/Apricot%20Regular.ttf') format('ttf'),
+         url('https://raw.githubusercontent.com/water-lead/confluence/main/Apricot%20Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .landing-content .description {
     font-weight: regular;
     margin-bottom: 10px;
@@ -116,8 +124,8 @@ body {
 }
 
 .page-section h1 {
-    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
-    font-size: 24px;
+    font-family: 'Apricot', sans-serif;
+    font-size: 36px;
     color: #FFFFFF;
 }
 

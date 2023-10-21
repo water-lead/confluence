@@ -10,10 +10,11 @@ body {
     padding: 20px;
     background-color: #A6F6F7;
     color: white;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    height: 100vh;
 }
 
 .page-section {

@@ -17,6 +17,12 @@ body {
     min-height: 100vh;
 }
 
+img1 {
+    max-width: 100%; /* Ensure the image does not exceed its container's width */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+
 .page-section {
     position: absolute;
     top: 50%;

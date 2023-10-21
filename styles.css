@@ -12,9 +12,10 @@ body {
     color: white;
     flex-direction: column;
     display: flex;
-    align-items: center; /* Vertically center content */
-    justify-content: center; /* Horizontally center content */
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    
 }
 
 .page-section {
@@ -25,6 +26,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    text-align: center; /* Center the text within each section */
+    max-width: 400px; /* Adjust the maximum width as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
 }
 
 h1 {

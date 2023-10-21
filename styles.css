@@ -93,6 +93,21 @@ body {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Quebab';
+    src: url('https://raw.githubusercontent.com/water-lead/confluence/main/Quebab-Shadow-ffp.ttf') format('ttf'),
+         url('https://raw.githubusercontent.com/water-lead/confluence/main/Quebab-Shadow-ffp.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bronson';
+    src: url('https://raw.githubusercontent.com/water-lead/confluence/main/Bronson-2OvJ8.ttf') format('ttf'),
+         url('https://raw.githubusercontent.com/water-lead/confluence/main/Bronson-2OvJ8.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 .landing-content .description {
     font-weight: regular;
     margin-bottom: 10px;
@@ -130,12 +145,14 @@ body {
 }
 
 .page-section .prompt {
+    font-family: 'Bronson', sans-serif;
     font-weight: regular;
     margin-bottom: 10px;
     color: #FFFFFF;
 }
 
 button {
+    font-family: 'Quebab', sans-serif;
         background-color: #CB6CE6;
     color: white;
     padding: 10px 40px;

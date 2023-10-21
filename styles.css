@@ -4,6 +4,37 @@ body {
     font-family: Georgia, sans-serif;
 }
 
+/* Add this to your CSS file */
+
+#welcome {
+    background-color: #0077b6; /* Use a blue color for the welcome section */
+    color: white;
+    text-align: center;
+}
+
+#welcome h1 {
+    font-size: 24px;
+    margin: 20px;
+}
+
+#welcome .description {
+    font-size: 16px;
+    margin: 20px;
+}
+
+#welcome button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 18px;
+}
+
+#welcome button:hover {
+    background-color: #005073; /* Slightly darker blue on hover */
+}
+
 .page {
     max-width: auto;
     margin: 0 auto;

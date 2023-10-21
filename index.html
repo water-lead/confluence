@@ -9,14 +9,14 @@
 <body>
     <div class="page">
         <!-- Welcome Page -->
-        <section class="page-section" id="welcome">
+        <section class="page-section" id="page1">
         <h1>Welcome!</h1>
         <p class="description">This tool helps you analyze and find intersections between different industries and ideas. Get started by entering the industries you want to analyze.</p>
         <button onclick="showNextPage(1)">Start</button>
         </section>
         
         <!-- Page 1: Enter Industries -->
-        <section class="page-section" id="page1">
+        <section class="page-section" id="page2">
             <h1>INDUSTRIES</h1>
             <p class="prompt">Enter the industries you want to analyze:</p>
             <input type="text" id="industry1" placeholder="Industry 1">
@@ -25,7 +25,7 @@
         </section>
 
         <!-- Page 2: Enter Ideas -->
-        <section class="page-section" id="page2">
+        <section class="page-section" id="page3">
             <h1>IDEAS</h1>
             <p class="prompt">Enter the ideas you want to intersect (at least two):</p>
             <input type="text" id="idea1" placeholder="Idea 1">
@@ -37,7 +37,7 @@
         </section>
 
         <!-- Page 3: Results -->
-        <section class="page-section" id="page3">
+        <section class="page-section" id="page4">
             <h1>RESULTS</h1>
             <!-- Display results here -->
             <button onclick="exportToPDF()">Export to PDF</button>

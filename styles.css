@@ -91,6 +91,7 @@ body {
          url('https://github.com/water-lead/confluence/raw/main/Apricot%20Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -99,6 +100,7 @@ body {
          url('https://github.com/water-lead/confluence/raw/main/Quebab-Shadow-ffp.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -107,6 +109,7 @@ body {
          url('https://github.com/water-lead/confluence/raw/main/Bronson-2OvJ8.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 .landing-content .description {
     font-weight: regular;

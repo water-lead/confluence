@@ -86,18 +86,16 @@ body {
 }
 
 @font-face {
-    font-family: 'Apricot';
-    src: url('https://github.com/water-lead/confluence/raw/main/Apricot%20Regular.ttf') format('ttf'),
-         url('https://github.com/water-lead/confluence/raw/main/Apricot%20Regular.ttf') format('ttf');
+    font-family: 'Niconne';
+    src: url(https://fonts.gstatic.com/s/niconne/v15/w8gaH2QvRug1_rTfnQyn2XwNqOs.woff2) format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Quebab';
-    src: url('https://github.com/water-lead/confluence/raw/main/Quebab-Shadow-ffp.ttf') format('ttf'),
-         url('https://github.com/water-lead/confluence/raw/main/Quebab-Shadow-ffp.ttf') format('ttf');
+    font-family: 'Piazzolla';
+    src: url('https://fonts.gstatic.com/s/Piazzolla/v15/w8gaH2QvRug1_rTfnQyn2XwNqOs.woff2) format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

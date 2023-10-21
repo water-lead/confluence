@@ -2,11 +2,7 @@
 
 body {
     font-family: Georgia, sans-serif;
-    background-image: url('https://raw.githubusercontent.com/water-lead/confluence/main/pexels-david-ruh-17709307.jpg');
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+    }
 
 /* CSS for the menu */
 .menu {

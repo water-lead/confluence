@@ -7,47 +7,44 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Menu -->
-    <nav class="menu">
-        <div class="logo">
-            <img src="logo.png" alt="Token Studio Logo">
-        </div>
-        <ul class="menu-items">
-            <li><a href="#landing">Studio</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Background Video -->
+    <video id="video-bg" autoplay muted loop>
+        <source src="background-video.mp4" type="video/mp4">
+    </video>
 
-    <!-- Landing Page with Video Background -->
-    <section class="landing" id="landing">
-        <video autoplay muted loop id="video-bg">
-            <source src="background-video.mp4" type="video/mp4">
-        </video>
-        <div class="landing-content">
-            <h1>Welcome to Token Studio</h1>
-            <p>Your creative design solution</p>
-            <a href="#studio" class="btn">Get Started</a>
-        </div>
-    </section>
+    <div class="landing-content">
+        <!-- Navigation Menu -->
+        <nav class="menu">
+            <div class="logo">
+                <img src="logo.png" alt="Token Studio Logo">
+            </div>
+            <ul class="menu-items">
+                <li><a href="#landing">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-    <!-- Studio Section -->
-    <section class="page-section" id="studio">
-        <h1>Studio</h1>
-        <!-- Add content for Studio section here -->
-    </section>
+        <!-- Landing Page Content -->
+        <section class="landing-section" id="landing">
+            <div class="centered">
+                <h1>Welcome to Token Studio</h1>
+                <p class="description">Generate creative designs with ease. Get started now.</p>
+                <button onclick="showNextPage(2)">START</button>
+            </div>
+        </section>
 
-    <!-- About Section -->
-    <section class="page-section" id="about">
-        <h1>About</h1>
-        <!-- Add content for About section here -->
-    </section>
+        <!-- Additional Page Sections -->
+        <section class="page-section" id="about">
+            <h1>About Us</h1>
+            <p>Learn more about Token Studio here.</p>
+        </section>
 
-    <!-- Contact Section -->
-    <section class="page-section" id="contact">
-        <h1>Contact</h1>
-        <!-- Add content for Contact section here -->
-    </section>
+        <section class="page-section" id="contact">
+            <h1>Contact Us</h1>
+            <p>Contact us for any inquiries or assistance.</p>
+        </section>
+    </div>
 
     <script src="script.js"></script>
 </body>

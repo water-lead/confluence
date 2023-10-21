@@ -5,7 +5,7 @@ body {
 }
 
 .page {
-    max-width: 0 auto;
+    max-width: auto;
     margin: 0 auto;
     padding: 20px;
     background-color: #A6F6F7;

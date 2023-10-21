@@ -3,64 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio</title>
+    <title>Token Studio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navigation Menu -->
+    <!-- Navigation Menu -->
     <nav class="menu">
         <div class="logo">
-            <img src="https://github.com/water-lead/confluence/raw/main/logo.png" alt="Token Studio Logo">
+            <img src="https://raw.githubusercontent.com/water-lead/confluence/main/logo.png" alt="Token Studio Logo">
         </div>
         <ul class="menu-items">
-            <li><a href="index.html">Studio</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <div class="page">
-        
-        <img class="image" src="https://github.com/water-lead/confluence/raw/main/pexels-david-ruh-17709307.jpg" alt="High-Quality Image 1">
-        
-        <!-- Welcome Page -->
-        <section class="page-section" id="page1">
-            <h1>Welcome!</h1>
-            <p class="description">Our tool helps you generate creative designs. It asks for a few inputs which are used to generate unique designs.</p>
-            <button onclick="showNextPage(2)">START</button>
-        </section>
-        
-        <!-- Page 1: Enter Industries -->
-        <section class="page-section" id="page2">
-            <h1>INDUSTRIES</h1>
-            <p class="prompt">Enter the industries you want to analyze:</p>
-            <input type="text" id="industry1" placeholder="Industry 1">
-            <input type="text" id="industry2" placeholder="Industry 2">
-            <button onclick="showNextPage(3)">NEXT</button>
-        </section>
-
-        <!-- Page 2: Enter Ideas -->
-        <section class="page-section" id="page3">
-            <h1>IDEAS</h1>
-            <p class="prompt">Enter the ideas you want to intersect (at least two):</p>
-            <input type="text" id="idea1" placeholder="Idea 1">
-            <input type="text" id="idea2" placeholder="Idea 2">
-            <input type="text" id="idea3" placeholder="Idea 3">
-            <input type="text" id="idea4" placeholder="Idea 4">
-            <input type="text" id="idea5" placeholder="Idea 5">
-            <button onclick="showNextPage(4)">NEXT</button>
-        </section>
-
-        <!-- Page 3: Results -->
-        <section class="page-section" id="page4">
-            <h1>RESULTS</h1>
-            <!-- Display results here -->
-            <button onclick="exportToPDF()">Export to PDF</button>
-            <button onclick="exportToDOCX()">Export to DOCX</button>
-        </section>
-    </div>
     
+    <!-- Home Page with Video Background -->
+    <section class="page-section" id="home">
+        <video autoplay loop muted poster="video-poster.png" id="bg-video">
+            <source src="background-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-text">
+            <h1>Welcome to Token Studio</h1>
+            <p>Your creative design tool.</p>
+            <a href="#about" class="button">Learn More</a>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="page-section" id="about">
+        <h1>About Token Studio</h1>
+        <p>Some information about your studio and its capabilities.</p>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="page-section" id="contact">
+        <h1>Contact Us</h1>
+        <p>Feel free to get in touch with any questions or inquiries.</p>
+    </section>
+
     <script src="script.js"></script>
-
-
 </body>
 </html>

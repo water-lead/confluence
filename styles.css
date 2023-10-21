@@ -19,7 +19,7 @@ body {
 .page-section {
     margin-bottom: 0 auto;
     align-items: center;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;

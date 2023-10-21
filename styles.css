@@ -1,12 +1,30 @@
 /* styles.css */
 
-/* Styles for the navigation menu */
+body {
+    font-family: Georgia, sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Background Video Styling */
+#video-bg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+/* CSS for the menu */
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: Transparent; /* Background color for the menu */
+    background-color: Transparent;
     color: white;
 }
 
@@ -18,10 +36,9 @@
 }
 
 .logo img {
-    width: 25%; /* Adjust the size of the logo */
+    width: 25%;
     height: auto;
     margin-right: 10px;
-    color: white;
 }
 
 .menu-items {
@@ -32,7 +49,7 @@
 
 .menu-items li a {
     text-decoration: none;
-    color: White;
+    color: white;
     font-weight: regular;
     font-size: 16px;
 }
@@ -42,55 +59,69 @@
     text-decoration: underline;
 }
 
-/* Styles for the Landing Page with Video Background */
-.landing {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-#video-bg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
+/* Content for Landing Page */
 .landing-content {
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: 1;
+    transform: translate(-50%, -50%);
     text-align: center;
+    max-width: 400px;
+    padding: 20px;
     color: white;
-    padding: 20% 0;
 }
 
 .landing-content h1 {
-    font-size: 36px;
+    color: #FFFFFF;
 }
 
-.landing-content p {
-    font-size: 20px;
-    margin: 20px 0;
+.landing-content .description {
+    font-weight: regular;
+    margin-bottom: 10px;
 }
 
-.btn {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #0077b6;
+.landing-content button {
+    background-color: #000000;
     color: white;
-    text-decoration: none;
-    font-weight: bold;
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
     border-radius: 18px;
-    font-size: 18px;
-    transition: background-color 0.2s;
 }
 
-.btn:hover {
-    background-color: #005073; /* Slightly darker blue on hover */
+.landing-content button:hover {
+    background-color: #005073;
 }
+
+/* CSS for Page Sections */
+.page-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 400px;
+    padding: 20px;
+    background-color: Transparent;
+}
+
+.page-section h1 {
+    color: #FFFFFF;
+}
+
+.page-section .prompt {
+    font-weight: regular;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+input {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #0077b6;
+    border-radius: 18px;
+}
+
+/* Additional styling can be added as needed */
+

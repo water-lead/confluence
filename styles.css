@@ -86,8 +86,8 @@ body {
 }
 
 @font-face {
-    font-family: 'Niconne';
-    src: url(https://fonts.gstatic.com/s/niconne/v15/w8gaH2QvRug1_rTfnQyn2XwNqOs.woff2) format('woff2');
+    font-family: 'Parisienne';
+    src: url(https://fonts.gstatic.com/s/parisienne/v13/E21i_d3kivvAkxhLEVZpQyZwD8CtevK5qw.woff2) format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -139,7 +139,7 @@ body {
 }
 
 .page-section h1 {
-    font-family: 'Niconne', sans-serif;
+    font-family: 'Parisienne', sans-serif;
     font-style: Italic;
     font-size: 66px;
     color: #FFFFFF;

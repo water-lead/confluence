@@ -7,31 +7,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Background Video -->
-    <video id="video-bg" autoplay muted loop>
-        <source src="background-video.mp4" type="video/mp4">
-    </video>
-
-
-    
-    <div class="landing-content">
-        <!-- Navigation Menu -->
-       <nav class="menu">
-        <!-- Your menu content here -->
+     <!-- Navigation Menu -->
+    <nav class="menu">
+        <div class="logo">
+            <img src="logo.png" alt="Token Studio Logo">
+        </div>
+        <ul class="menu-items">
+            <li><a href="#landing">Studio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
     <!-- Landing Page with Video Background -->
-    <div class="landing">
-        <video autoplay muted loop id="video-background">
-            <source src="your-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+    <section class="landing" id="landing">
+        <video autoplay muted loop id="video-bg">
+            <source src="background-video.mp4" type="video/mp4">
         </video>
         <div class="landing-content">
             <h1>Welcome to Token Studio</h1>
-            <p>Your introductory text here</p>
+            <p>Your creative design solution</p>
+            <a href="#studio" class="btn">Get Started</a>
         </div>
-    </div>
-        </section>
+    </section>
 
         <!-- Additional Page Sections -->
         <section class="page-section" id="about">

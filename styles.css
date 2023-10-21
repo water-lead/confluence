@@ -17,9 +17,46 @@ body {
     min-height: 100vh;
 }
 
-img1 {
-    max-width: 100%; /* Ensure the image does not exceed its container's width */
-    height: auto; /* Maintain the image's aspect ratio */
+.image:nth-of-type(1) {
+    width: 200px;
+    height: 200px;
+    /* Add other styles for this image */
+}
+
+.image:nth-of-type(2) {
+    width: 250px;
+    height: 250px;
+    /* Add other styles for this image */
+}
+
+.image:nth-of-type(3) {
+    width: 180px;
+    height: 180px;
+    /* Add other styles for this image */
+}
+
+.image:nth-of-type(4) {
+    width: 200px;
+    height: 200px;
+    /* Add other styles for this image */
+}
+
+.image:nth-of-type(5) {
+    width: 250px;
+    height: 250px;
+    /* Add other styles for this image */
+}
+
+.image:nth-of-type(6) {
+    width: 180px;
+    height: 180px;
+    /* Add other styles for this image */
+}
+
+.image:nth-of-type(7) {
+    width: 180px;
+    height: 180px;
+    /* Add other styles for this image */
 }
 
 

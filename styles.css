@@ -87,24 +87,24 @@ body {
 
 @font-face {
     font-family: 'Apricot';
-    src: url('https://raw.githubusercontent.com/water-lead/confluence/main/Apricot%20Regular.ttf') format('ttf'),
-         url('https://raw.githubusercontent.com/water-lead/confluence/main/Apricot%20Regular.ttf') format('ttf');
+    src: url('https://github.com/water-lead/confluence/raw/main/Apricot%20Regular.ttf') format('ttf'),
+         url('https://github.com/water-lead/confluence/raw/main/Apricot%20Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Quebab';
-    src: url('https://raw.githubusercontent.com/water-lead/confluence/main/Quebab-Shadow-ffp.ttf') format('ttf'),
-         url('https://raw.githubusercontent.com/water-lead/confluence/main/Quebab-Shadow-ffp.ttf') format('ttf');
+    src: url('https://github.com/water-lead/confluence/raw/main/Quebab-Shadow-ffp.ttf') format('ttf'),
+         url('https://github.com/water-lead/confluence/raw/main/Quebab-Shadow-ffp.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Bronson';
-    src: url('https://raw.githubusercontent.com/water-lead/confluence/main/Bronson-2OvJ8.ttf') format('ttf'),
-         url('https://raw.githubusercontent.com/water-lead/confluence/main/Bronson-2OvJ8.ttf') format('ttf');
+    src: url('https://github.com/water-lead/confluence/raw/main/Bronson-2OvJ8.ttf') format('ttf'),
+         url('https://github.com/water-lead/confluence/raw/main/Bronson-2OvJ8.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }

@@ -95,14 +95,14 @@ body {
 
 @font-face {
     font-family: 'Piazzolla';
-    src: url('https://fonts.gstatic.com/s/Piazzolla/v15/w8gaH2QvRug1_rTfnQyn2XwNqOs.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/piazzolla/v35/N0b52SlTPu5rIkWIZjVKKtYtfxYqZ4RJBFzFfYUjkSDdlqZgy7LYxkL13gD9BRy4k5M.woff2) format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Bronson';
+    font-family: 'Rubik Mono One';
     src: url('https://github.com/water-lead/confluence/raw/main/Bronson-2OvJ8.ttf') format('ttf'),
          url('https://github.com/water-lead/confluence/raw/main/Bronson-2OvJ8.ttf') format('ttf');
     font-weight: normal;
@@ -141,19 +141,19 @@ body {
 
 .page-section h1 {
     font-family: 'Niconne', sans-serif;
-    font-size: 36px;
+    font-size: 40px;
     color: #FFFFFF;
 }
 
 .page-section .prompt {
-    font-family: 'Bronson', sans-serif;
+    font-family: 'Piazzolla', sans-serif;
     font-weight: regular;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     color: #FFFFFF;
 }
 
 button {
-    font-family: 'Quebab', sans-serif;
+    font-family: 'Rubik Mono One', sans-serif;
         background-color: #CB6CE6;
     color: white;
     padding: 10px 40px;

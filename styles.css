@@ -2,7 +2,7 @@
 
 body {
     font-family: Georgia, sans-serif;
-  background-image: url('https://raw.githubusercontent.com/water-lead/confluence/main/pexels-david-ruh-17709307.jpg');
+    background-image: url('https://raw.githubusercontent.com/water-lead/confluence/main/pexels-david-ruh-17709307.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: Transparent; /* Background color for the menu */
+    background-color: transparent;
     color: white;
 }
 
@@ -40,7 +40,7 @@ body {
 
 .menu-items li a {
     text-decoration: none;
-    color: White;
+    color: white;
     font-weight: regular;
     font-size: 16px;
 }
@@ -68,7 +68,7 @@ body {
     text-align: center;
     max-width: 400px;
     padding: 20px;
-    background-color: TRANSPARENT;
+    background-color: transparent;
 }
 
 h1 {
@@ -76,7 +76,7 @@ h1 {
 }
 
 .prompt {
-    font-weight: REGULAR;
+    font-weight: regular;
     margin-bottom: 10px;
     color: #FFFFFF;
 }

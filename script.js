@@ -23,14 +23,14 @@ function exportToDOCX() {
 }
 
 // Initially, show the first page and hide the others
-document.getElementById('welcome').style.display = 'block';
-document.getElementById('page1').style.display = 'none';
+document.getElementById('page1').style.display = 'block';
 document.getElementById('page2').style.display = 'none';
 document.getElementById('page3').style.display = 'none';
+document.getElementById('page4').style.display = 'none';
 
 function showNextPage(pageNumber) {
             // Hide all pages
-            for (let i = 1; i <= 3; i++) {
+            for (let i = 1; i <= 4; i++) {
                 document.getElementById('page' + i).style.display = 'none';
             }
             

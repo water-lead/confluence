@@ -26,3 +26,13 @@ function exportToDOCX() {
 document.getElementById('page1').style.display = 'block';
 document.getElementById('page2').style.display = 'none';
 document.getElementById('page3').style.display = 'none';
+
+function showNextPage(pageNumber) {
+            // Hide all pages
+            for (let i = 1; i <= 3; i++) {
+                document.getElementById('page' + i).style.display = 'none';
+            }
+            
+            // Show the specified page
+            document.getElementById('page' + pageNumber).style.display = 'block';
+}

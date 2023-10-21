@@ -28,7 +28,9 @@ document.getElementById('page2').style.display = 'none';
 document.getElementById('page3').style.display = 'none';
 document.getElementById('page4').style.display = 'none';
 
-function showNextPage(pageNumber) {
+function showNextPage(currentPage) {
+    // Determine the next page
+    const nextPage = currentPage + 1;
             // Hide all pages
             for (let i = 1; i <= 4; i++) {
                 document.getElementById('page' + i).style.display = 'none';

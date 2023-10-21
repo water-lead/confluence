@@ -33,9 +33,9 @@ function showNextPage(currentPage) {
     const nextPage = currentPage + 1;
             // Hide all pages
             for (let i = 1; i <= 4; i++) {
-                document.getElementById('page' + i).style.display = 'none';
-            }
-            
+   
             // Show the specified page
-            document.getElementById('page' + pageNumber).style.display = 'block';
-}
+            document.getElementById('page' + i).style.display = 'block';
+}              
+     document.getElementById('page' + i).style.display = 'n';
+            }  

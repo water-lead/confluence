@@ -9,11 +9,12 @@
     height: 100%;
     position: relative;
     text-align: center; /* Center-align text */
+    overflow: hidden;
 }
 
 /* Video container for the landing page */
 #video-container {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -21,12 +22,13 @@
     overflow: hidden;
 }
 
+
 /* CSS for the landing page video background */
 #video-bg {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
@@ -52,8 +54,10 @@ video {
     padding: 10px 20px;
     background-color: transparent; 
     color: white;
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%
+    transform: translate(-50%, -50%);
     width: 100%;
     z-index: 1;
 }
@@ -139,6 +143,7 @@ video {
     border-radius: 18px;
     display: block;
     margin-top: 20px; /* Adjust the margin to control the distance from the text */
+    font-size: 18px;
 }
 
 /* Button hover styles for the landing page */
@@ -193,11 +198,3 @@ input {
     border: 1px solid #0077b6;
     border-radius: 18px;
 }
-
-/* Additional styling can be added as needed */
-
-
-
-
-
-

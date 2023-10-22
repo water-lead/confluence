@@ -96,11 +96,12 @@ body {
     transition: color 0.3s, border 0.3s;
     border: 1px solid #FF3673; /* Normal border style */
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    font-family: 'Original Surfer';
+    font-family: 'Original Surfer', sans-serif;
     src: url(https://fonts.gstatic.com/s/originalsurfer/v22/RWmQoKGZ9vIirYntXJ3_MbekzNMSC0FuIFWcKg.woff2) format('woff2');
 }
+    display: inline-flex;
 
 .landing-section button:hover {
     background-color: #FF3673;

@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Other meta tags and links -->
-    <link rel="stylesheet" href="studio.css"> <!-- Link to the studio page styles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio</title>
+    <link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- Studio Page with Video Background -->
-<section class="studio" id="STUDIO">
-    <div id="video-container">
-        <video autoplay muted loop id="studio-video-bg">
-            <source src="studio-video.mp4" type="video/mp4">
-        </video>
-    </div>
-    
-    <!-- Navigation Menu -->
-    <nav class="studio-menu">
+    <!-- Background Video -->
+    <video id="video-bg" autoplay muted loop>
+        <source src=“studio-video.mp4" type="video/mp4">
+    </video>
+
+     <!-- Navigation Menu -->
+    <nav class="menu">
         <div class="logo">
-            <img src="logo.png" alt="Token Studio Logo">
+            <img src="Logo.png" alt="Token Studio Logo">
         </div>
     </nav>
-
-    <!-- Welcome Page -->
+    
+    <div class=“studio-content">
+        <!-- Welcome Page -->
     <section class="page-section" id="page1">
-        <h1>Welcome!</h1>
         <p class="description">Our tool helps you generate creative designs. It asks for a few inputs which are used to generate unique designs.</p>
         <button onclick="showNextPage(2)">START</button>
     </section>
@@ -55,6 +59,7 @@
         <button onclick="exportToPDF()">Export to PDF</button>
         <button onclick="exportToDOCX()">Export to DOCX</button>
     </section>
-</section>
+
+    <script src="script.js"></script>
 </body>
 </html>

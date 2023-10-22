@@ -117,11 +117,11 @@ body {
 }
 
 .landing-section button {
-  width: 60%;
+  width: 45%;
   height: auto;
   background-color: #8082ff;
   color: #ffffff;
-  padding: 21px 140px;
+  padding: 18px 130px;
   border: none;
   cursor: pointer;
   border-radius: 40px;

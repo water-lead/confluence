@@ -20,7 +20,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%; 
-    height: auto; 
+    height: 100%; 
     z-index: -1;
 }
 
@@ -46,13 +46,13 @@ body {
 }
 
 .studio-section {
-    position: absolute;
-    top: 840px;
-    left: 50%;
+    position: relative;
+    text-align: center;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px;
     background-color: Transparent;
 
 /* Content styles for studio page page sections */

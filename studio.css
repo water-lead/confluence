@@ -24,6 +24,13 @@ body {
     z-index: -1;
 }
 
+.memu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: Transparent;
+
 .logo {
     display: flex;
     align-items: center;
@@ -36,8 +43,12 @@ body {
     height: auto;
     margin-right: 25px;
 }
+}
 
 .studio-section {
+    position: absolute;
+    top: 840px;
+    left: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +73,7 @@ body {
     font-family: 'Montez', cursive;
     font-style: cursive;
     font-size: 72px;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 /* Prompt text styles for studio page page sections */
@@ -71,7 +82,15 @@ body {
     font-family: 'Syncopate', sans-serif;
     font-weight: normal; /* Change to 'bold' if needed */
     margin-bottom: 12px;
-    color: #FFFFFF;
+    color: #000000;
+}
+
+.page-section .description {
+    display: flex;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: normal; /* Change to 'bold' if needed */
+    margin-bottom: 12px;
+    color: #000000;
 }
 
 .page-section button {

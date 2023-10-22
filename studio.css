@@ -78,7 +78,7 @@ body {
 /* Heading styles for studio page page sections */
 .page-section h1 {
     font-family: 'Aclonica', sans-serif;
-    font-size: 66px;
+    font-size: 48px;
     color: #000000;
 }
 
@@ -87,7 +87,7 @@ body {
 .page-section .description {
     font-family: 'Syncopate', sans-serif;
     font-weight: normal;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     color: #000000;
 }
 

@@ -114,6 +114,22 @@ video {
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Syncopate';
+    src: url(https://fonts.gstatic.com/s/syncopate/v21/pe0sMIuPIYBCpEV5eFdCBfe_Kdxicw.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Original Surfer';
+    src: url(https://fonts.gstatic.com/s/originalsurfer/v22/RWmQoKGZ9vIirYntXJ3_MbekzNMSC0FuIFWcKg.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Description text styles */
 .landing-content .description {
     font-weight: normal; /* Change to 'bold' if needed */

@@ -41,9 +41,9 @@ body {
 }
 
 .logo img {
-    width: 15%;
+    width: 30%;
     height: auto;
-    margin-right: 15px;
+    margin-right: 25px;
 }
 
 .menu-items {
@@ -56,8 +56,8 @@ body {
     text-decoration: none;
     color: #8082FF;
     font-weight: regular;
-    font-size: 16px;
-    margin-right: 15px;
+    font-size: 25px;
+    margin-right: 25px;
 }
 
 /* Style the links */
@@ -89,6 +89,8 @@ body {
 }
 
 .landing-content button {
+    width: 30%;
+    height: auto;
     background-color: #8082FF;
     color: white;
     padding: 10px 40px;

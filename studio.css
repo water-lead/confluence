@@ -1,0 +1,88 @@
+/* studio.css (for Studio Page) */
+
+/* Style for the video tags */
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* studio.css (for Studio Page) */
+
+/* Style for the studio video */
+#studio-video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Fit video to screen */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Logo styles for the studio page */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Button hover styles for the studio page logo */
+.logo:hover {
+    text-decoration: underline;
+}
+
+/* Content styles for studio page page sections */
+.page-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    padding: 20px;
+}
+
+/* Heading styles for studio page page sections */
+.page-section h1 {
+    font-family: 'Montez', cursive;
+    font-style: cursive;
+    font-size: 72px;
+    color: #FFFFFF;
+}
+
+/* Prompt text styles for studio page page sections */
+.page-section .prompt {
+    font-family: 'Syncopate', sans-serif;
+    font-weight: normal; /* Change to 'bold' if needed */
+    margin-bottom: 12px;
+    color: #FFFFFF;
+}
+
+/* Button styles used in page sections */
+button {
+    font-family: 'Original Surfer', sans-serif;
+    background-color: #CB6CE6;
+    color: white;
+    font-size: 12px;
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 18px;
+}
+
+/* Input styles */
+input {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #0077b6;
+    border-radius: 18px;
+}
+
+/* Rest of your studio page styles remain the same */

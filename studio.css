@@ -1,36 +1,40 @@
+STUDIO CSS
+
+
 /* studio.css (for Studio Page) */
 
-/* Style for the video tags */
-video {
-    position: absolute;
+#video-container {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
-/* studio.css (for Studio Page) */
-
-/* Style for the studio video */
 #studio-video-bg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Fit video to screen */
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; 
+    height: auto; 
     z-index: -1;
 }
 
-/* Logo styles for the studio page */
 .logo {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    display: flex;
+    align-items: center;
     font-size: 24px;
     color: white;
-    cursor: pointer;
 }
+
+.logo img {
+    width: 35%;
+    height: auto;
+    margin-right: 25px;
+}
+
 
 /* Button hover styles for the studio page logo */
 .logo:hover {
@@ -64,16 +68,28 @@ video {
     color: #FFFFFF;
 }
 
-/* Button styles used in page sections */
-button {
-    font-family: 'Original Surfer', sans-serif;
-    background-color: #FF3673;
-    color: white;
-    font-size: 12px;
-    padding: 10px 40px;
+.page-section button {
+    width: 60%;
+    height: auto;
+    background-color: #8082FF;
+    color: #FF3673;
+    padding: 40px 135px;
     border: none;
     cursor: pointer;
-    border-radius: 18px;
+    border-radius: 35px;
+    transition: color 0.3s, border 0.3s;
+    border: 1px solid #FF3673; /* Normal border style */
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Original Surfer';
+    src: url(https://fonts.gstatic.com/s/originalsurfer/v22/RWmQoKGZ9vIirYntXJ3_MbekzNMSC0FuIFWcKg.woff2) format('woff2');
+}
+
+.page-section button:hover {
+    background-color: #FF3673;
+    color: #8082FF;
+    border: 1px solid #8082FF; 
 }
 
 /* Input styles */
@@ -83,6 +99,11 @@ input {
     margin-bottom: 10px;
     border: 1px solid #0077b6;
     border-radius: 18px;
+font-size: 18px;
+    font-weight: bold;
+    font-family: 'Original Surfer';
+    src: url(https://fonts.gstatic.com/s/originalsurfer/v22/RWmQoKGZ9vIirYntXJ3_MbekzNMSC0FuIFWcKg.woff2) format('woff2');
+}
 }
 
 /* Rest of your studio page styles remain the same */

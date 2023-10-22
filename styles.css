@@ -72,6 +72,8 @@ body {
     position: absolute;
     top: 800px;
     left: 50%;
+    width: 50%;
+    height: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     max-width: 400px;
@@ -99,5 +101,6 @@ body {
 .landing-section button:hover {
     background-color: #FF3673;
     border-color: #8082FF;
+    color: #8082FF;
 }
 

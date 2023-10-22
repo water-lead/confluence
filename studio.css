@@ -4,7 +4,8 @@ body {
     overflow: hidden;
     background: #fff;
 }
-/* studio.css (for Studio Page) */
+
+/* Styles for the video container */
 #video-container {
     position: fixed;
     top: 0;
@@ -14,23 +15,27 @@ body {
     overflow: hidden;
 }
 
+/* Video background styles for the studio page */
 #studio-video-bg {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+    height: 100%;
     z-index: -1;
 }
 
+/* CSS for the navigation menu */
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: Transparent;
+    background-color: transparent;
+}
 
+/* Logo styles */
 .logo {
     display: flex;
     align-items: center;
@@ -38,14 +43,15 @@ body {
     color: white;
 }
 
+/* Logo image styles */
 .logo img {
     width: 35%;
     height: auto;
     margin-right: 25px;
 }
-}
 
-.studio-section {
+/* Content styles for studio page page sections */
+.page-section {
     position: relative;
     text-align: center;
     max-width: 100%;
@@ -53,48 +59,29 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: Transparent;
-
-/* Content styles for studio page page sections */
-.page-section {
-    position: relative;
-    max-width: 100%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    padding: 20px;
-    color: white;
+    background-color: transparent;
 }
 
 /* Heading styles for studio page page sections */
 .page-section h1 {
-    display: flex;
     font-family: 'Montez', cursive;
     font-style: cursive;
     font-size: 72px;
     color: #000000;
 }
 
-/* Prompt text styles for studio page page sections */
-.page-section .prompt {
-    display: flex;
-    font-family: 'Syncopate', sans-serif;
-    font-weight: normal; /* Change to 'bold' if needed */
-    margin-bottom: 12px;
-    color: #000000;
-}
-
+/* Prompt and description text styles */
+.page-section .prompt,
 .page-section .description {
-    display: flex;
     font-family: 'Syncopate', sans-serif;
-    font-weight: normal; /* Change to 'bold' if needed */
+    font-weight: normal;
     margin-bottom: 12px;
     color: #000000;
 }
 
+/* Button styles */
 .page-section button {
-    display: flex;
     width: 60%;
-    height: auto;
     background-color: #8082FF;
     color: #FF3673;
     padding: 40px 135px;
@@ -106,17 +93,17 @@ body {
     cursor: pointer;
     font-size: 30px;
     font-weight: bold;
-    display: inline-flex;
     font-family: 'Syncopate', sans-serif;
     white-space: nowrap;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
 }
 
+/* Button hover styles */
 .page-section button:hover {
     background-color: #FF3673;
     color: #8082FF;
-    border: 1px solid #8082FF; 
+    border: 1px solid #8082FF;
 }
 
 /* Input styles */
@@ -128,7 +115,5 @@ input {
     border-radius: 18px;
     font-size: 18px;
     font-weight: bold;
-    font-family: 'Syncopate', san-serif;
-    src: url(https://fonts.gstatic.com/s/syncopate/v21/pe0pMIuPIYBCpEV5eFdKvtKqBP5vWVYgVw.woff2) format('woff2');
-}
+    font-family: 'Syncopate', sans-serif;
 }

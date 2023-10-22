@@ -88,18 +88,16 @@ body {
     width: 60%;
     height: auto;
     background-color: #8082FF;
-    color: #FF3673;
-    padding: 40px 135px;
+    color: #FFFFFF;
+    padding: 35px 120px;
     border: none;
     cursor: pointer;
     border-radius: 35px;
     transition: color 0.3s, border 0.3s;
     border: 1px solid #FF3673; /* Normal border style */
     cursor: pointer;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
-    font-family: 'Original Surfer', sans-serif;
-    src: url(https://fonts.gstatic.com/s/originalsurfer/v22/RWmQoKGZ9vIirYntXJ3_MbekzNMSC0FuIFWcKg.woff2) format('woff2');
     display: inline-flex;
 }
 

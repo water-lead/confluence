@@ -101,6 +101,7 @@ body {
     font-weight: bold;
     display: inline-flex;
     font-family: 'Original Surfer', sans-serif;
+    white-space: nowrap;
 }
 
 .landing-section button:hover {

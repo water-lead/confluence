@@ -20,8 +20,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  height: auto;
+  height: 100%;
   z-index: -1;
+  object-fit: cover;
 }
 
 /* CSS for the menu */
@@ -46,7 +47,6 @@ body {
   width: 30%;
   height: auto;
   margin-right: 25px;
-
 }
 
 .menu-items {
@@ -68,16 +68,21 @@ body {
     font-size: 18px;
   }
 }
+@media (max-width: 500px) {
+  .menu-items li a {
+    font-size: 14px;
+  }
+}
 
 /* Style the links */
 .menu-items li a:hover {
   text-decoration: underline;
   color: #ff3673;
 }
-.centered{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.centered {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 /* } */
 /* Content for Landing Page */
@@ -86,7 +91,7 @@ body {
   /* top: 800px; */
   bottom: 0;
   left: 50%;
-  right:50%;
+  right: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   max-width: 400px;
@@ -122,6 +127,29 @@ body {
   display: flex; /* Enable flexbox layout */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
+}
+@media (max-width:500px) {
+  .landing-section button {
+    width: 100%;
+    height: auto;
+    background-color: #8082ff;
+    color: #ffffff;
+    padding: 15px 100px;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: color 0.3s, border 0.3s;
+    border: 1px solid #ff3673; /* Normal border style */
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-flex;
+    font-family: "Syncopate", sans-serif;
+    white-space: nowrap;
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
 }
 
 .landing-section button:hover {

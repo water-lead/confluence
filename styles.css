@@ -1,6 +1,6 @@
 
 body {
-    font-family: Quintessential, sans-serif;
+    font-family: Syncopate, sans-serif;
     margin: 0;
     overflow: hidden;
     background: #000;
@@ -89,13 +89,14 @@ body {
     height: auto;
     background-color: #8082FF;
     color: #FF3673;
-    padding: 20px 45px;
+    padding: 40px 75px;
     border: none;
     cursor: pointer;
     border-radius: 25px;
     transition: color 0.3s, border 0.3s;
     border: 1px solid #FF3673; /* Normal border style */
     cursor: pointer;
+    font-size: 16px;
 }
 
 .landing-section button:hover {

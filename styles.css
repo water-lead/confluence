@@ -28,6 +28,16 @@ body {
     z-index: -1;
 }
 
+#studio-video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto%
+    z-index: -1;
+}
+
 /* Style for the video tags */
 video {
     position: absolute;

@@ -97,11 +97,12 @@ body {
     transition: color 0.3s, border 0.3s;
     border: 1px solid #FF3673; /* Normal border style */
     cursor: pointer;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     display: inline-flex;
     font-family: 'Original Surfer', sans-serif;
     white-space: nowrap;
+    text-align: center;
 }
 
 .landing-section button:hover {

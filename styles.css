@@ -100,8 +100,8 @@ body {
     font-weight: bold;
     font-family: 'Original Surfer', sans-serif;
     src: url(https://fonts.gstatic.com/s/originalsurfer/v22/RWmQoKGZ9vIirYntXJ3_MbekzNMSC0FuIFWcKg.woff2) format('woff2');
-}
     display: inline-flex;
+}
 
 .landing-section button:hover {
     background-color: #FF3673;

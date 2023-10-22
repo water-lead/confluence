@@ -68,7 +68,7 @@ body {
 
 }
 /* Content for Landing Page */
-.landing-content {
+.landing-section {
     position: absolute;
     top: 330px;
     left: 50%;
@@ -79,12 +79,12 @@ body {
     color: white;
 }
 
-.landing-content .description {
+.landing-section .description {
     font-weight: regular;
     margin-bottom: 10px;
 }
 
-.landing-content button {
+.landing-section button {
     width: 80%;
     height: 12%;
     background-color: #8082FF;
@@ -96,7 +96,7 @@ body {
     border-color: #FF3673;
 }
 
-.landing-content button:hover {
+.landing-section button:hover {
     background-color: #FF3673;
     border-color: #8082FF;
 }

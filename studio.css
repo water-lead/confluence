@@ -1,152 +1,159 @@
 body {
-    font-family: 'Syncopate', sans-serif;
-    margin: 0;
-    overflow: hidden;
-    background: #fff;
+  font-family: "Syncopate", sans-serif;
+  margin: 0;
+  overflow: hidden;
+  background: #fff;
 }
 
 /* Styles for the video container */
 #video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 /* Video background styles for the studio page */
 
-@media (min-width:1536px) {
-    #studio-video-bg {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        object-fit: cover;
-    }  
-}
-@media (max-width:1536px) {
-    #studio-video-bg {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        object-fit: cover;
-    }  
-}
-/* Logo styles */
-.logo {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    color: white;
-    width: 40%;
-    flex-shrink: 0;
-    display: flex;
-  }
-  
-  .logo img {
-    width: 30%;
-    height: auto;
-    margin-right: 25px;
-  
-  }
-/* Content styles for studio page page sections */
-.page-section {
+@media (min-width: 1536px) {
+  #studio-video-bg {
     position: absolute;
-    text-align: center;
-    max-width: 600px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* padding: 20px; */
-    background-color: transparent;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+}
+@media (max-width: 1536px) {
+  #studio-video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+}
+/* Logo styles */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  width: 40%;
+  flex-shrink: 0;
+  display: flex;
+}
+
+.logo img {
+  width: 30%;
+  height: auto;
+  margin-right: 25px;
+}
+/* Content styles for studio page page sections */
+.page-section {
+  position: absolute;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px; */
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 /* Heading styles for studio page page sections */
 .page-section h1 {
-    font-family: 'Montez', cursive;
+  font-family: "Montez", cursive;
+  font-style: cursive;
+  font-size: 72px;
+  color: #000000;
+}
+@media (max-width: 768px) {
+  .page-section h1 {
+    font-family: "Montez", cursive;
     font-style: cursive;
-    font-size: 72px;
+    font-size: 48px;
     color: #000000;
+  }
 }
 
 /* Prompt and description text styles */
 .page-section .prompt,
 .page-section .description {
-    font-family: 'Syncopate', sans-serif;
-    font-weight: normal;
-    margin-bottom: 12px;
-    color: #000000;
+  font-family: "Syncopate", sans-serif;
+  font-weight: normal;
+  margin-bottom: 12px;
+  color: #000000;
 }
 
 /* Button styles */
 .page-section button {
-    /* width: 60%; */
-    background-color: #8082FF;
-    color: #FF3673;
-    padding: 21px 100px;
+  /* width: 60%; */
+  background-color: #8082ff;
+  color: #ff3673;
+  padding: 21px 100px;
+  border: none;
+  cursor: pointer;
+  border-radius: 35px;
+  transition: color 0.3s, border 0.3s;
+  border: 1px solid #ff3673; /* Normal border style */
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Syncopate", sans-serif;
+  /*white-space: nowrap;*/
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+@media (max-width: 500px) {
+  .page-section button {
+    width: 100%;
+    background-color: #8082ff;
+    color: #ff3673;
+    padding: 15px 10px;
     border: none;
     cursor: pointer;
     border-radius: 35px;
     transition: color 0.3s, border 0.3s;
-    border: 1px solid #FF3673; /* Normal border style */
+    border: 1px solid #ff3673; /* Normal border style */
     cursor: pointer;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
-    font-family: 'Syncopate', sans-serif;
+    font-family: "Syncopate", sans-serif;
     /*white-space: nowrap;*/
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-}
-@media (max-width:500px) {
-    .page-section button {
-        width: 100%;
-        background-color: #8082FF;
-        color: #FF3673;
-        padding: 15px 10px;
-        border: none;
-        cursor: pointer;
-        border-radius: 35px;
-        transition: color 0.3s, border 0.3s;
-        border: 1px solid #FF3673; /* Normal border style */
-        cursor: pointer;
-        font-size: 20px;
-        font-weight: bold;
-        font-family: 'Syncopate', sans-serif;
-        /*white-space: nowrap;*/
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
-    }
+  }
 }
 
 /* Button hover styles */
 .page-section button:hover {
-    background-color: #FF3673;
-    color: #8082FF;
-    border: 1px solid #8082FF;
+  background-color: #ff3673;
+  color: #8082ff;
+  border: 1px solid #8082ff;
 }
 
 /* Input styles */
 input {
-    width: 30%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #0077b6;
-    border-radius: 18px;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Syncopate', sans-serif;
+  width: 30%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #0077b6;
+  border-radius: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Syncopate", sans-serif;
 }

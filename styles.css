@@ -89,10 +89,10 @@ body {
 .landing-section {
   position: absolute;
   /* top: 800px; */
-  bottom: 0;
+  bottom: 30%;
   left: 50%;
   right: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
   text-align: center;
   max-width: 400px;
   padding: 20px;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio</title>
+    <title>Token Studio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
@@ -17,15 +17,23 @@
         <div class="logo">
             <img src="logo.png" alt="Token Studio Logo">
         </div>
-        <!-- In your navigation menu -->
-    <ul class="menu-items">
-    <li><a href="landing.html">ABOUT</a></li>
-    <li><a href="studio.html">STUDIO</a></li>
-    <li><a href="#contact">CONTACT</a></li>
-</ul>
+        <ul class="menu-items">
+            <li><a href="studio.html">STUDIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
     </nav>
 
-   <script src="script.js"></script>
-   
+    <section class="landing" id="landing">
+        <video autoplay muted loop id="video-bg">
+            <source src="background-video.mp4" type="video/mp4">
+        </video>
+        <div class="landing-content">
+            <h1>Welcome to our Token Studio!</h1>
+            <p>Your creative design solution</p>
+            <button onclick="window.location.href='studio.html'">START HERE</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

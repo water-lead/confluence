@@ -77,9 +77,8 @@ body {
 
 /* Heading styles for studio page page sections */
 .page-section h1 {
-    font-family: 'Montez', cursive;
-    font-style: cursive;
-    font-size: 72px;
+    font-family: 'Aclonica', sans-serif;
+    font-size: 66px;
     color: #000000;
 }
 

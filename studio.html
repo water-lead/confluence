@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio</title>
     <link rel="stylesheet" href="styles.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
@@ -17,41 +17,44 @@
         <source src="studio-video.mp4" type="video/mp4">
     </video>
 
-<div class="return-button">
-    <a href="index.html">
-        <div class="logo">
-        <img src="logo.png" alt="Return to Home">
-        </div>
-    </a>
-</div>
+    <div class="return-button">
+            <div class="logo">
+            <img src="logo.png" alt="Return to Home">
+                <a href="index.html">
+                </a>
+            </div>
+    </div>
     
     <div class=“studio-content">
         <!-- Welcome Page -->
-    <section class="page-section" id="page1">
-        <p class="description">Our tool helps you generate creative designs. It asks for a few inputs which are used to generate unique designs.</p>
+        <section class="page-section" id="page1">
+        <p <div class="description">Our tool helps you generate creative designs. It asks for a few inputs which are used to generate unique designs.</p>
         <button onclick="showNextPage(2)">START</button>
-    </section>
+            </div>
+        </section>
 
     <!-- Page 2: Enter Industries -->
-    <section class="page-section" id="page2">
+        <section class="page-section" id="page2">
         <h1>INDUSTRIES</h1>
-        <p class="prompt">Enter the industries you want to analyze:</p>
+        <p <div class="prompt">Enter the industries you want to analyze:</p>
         <input type="text" id="industry1" placeholder="Industry 1">
         <input type="text" id="industry2" placeholder="Industry 2">
         <button onclick="showNextPage(3)">NEXT</button>
-    </section>
+            </div>
+        </section>
 
     <!-- Page 3: Enter Ideas -->
     <section class="page-section" id="page3">
         <h1>IDEAS</h1>
-        <p class="prompt">Enter the ideas you want to intersect (at least two):</p>
+        <p <div class="prompt">Enter the ideas you want to intersect (at least two):</p>
         <input type="text" id="idea1" placeholder="Idea 1">
         <input type="text" id="idea2" placeholder="Idea 2">
         <input type="text" id="idea3" placeholder="Idea 3">
         <input type="text" id="idea4" placeholder="Idea 4">
         <input type="text" id="idea5" placeholder="Idea 5">
         <button onclick="showNextPage(4)">NEXT</button>
-    </section>
+        </div>
+        </section>
 
     <!-- Page 4: Results -->
     <section class="page-section" id="page4">
@@ -60,7 +63,7 @@
         <button onclick="exportToPDF()">Export to PDF</button>
         <button onclick="exportToDOCX()">Export to DOCX</button>
     </section>
-
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

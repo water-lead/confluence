@@ -4,6 +4,7 @@ body {
     margin: 0;
     overflow: hidden;
     background: #000;
+    display: inline-flex;
 }
 
 #video-container {
@@ -89,7 +90,7 @@ body {
     height: auto;
     background-color: #8082FF;
     color: #FFFFFF;
-    padding: 35px 120px;
+    padding: 25px 120px;
     border: none;
     cursor: pointer;
     border-radius: 35px;
@@ -99,6 +100,7 @@ body {
     font-size: 25px;
     font-weight: bold;
     display: inline-flex;
+    font-family: 'Original Surfer', sans-serif;
 }
 
 .landing-section button:hover {

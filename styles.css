@@ -1,20 +1,13 @@
-/* styles.css (for Landing Page) */
 
-.landing {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    text-align: center; /* Center-align text */
+body {
+    font-family: Quintessential, sans-serif;
+    margin: 0;
     overflow: hidden;
+    background: #000;
 }
 
-/* Video container for the landing page */
 #video-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -22,47 +15,26 @@
     overflow: hidden;
 }
 
-
-/* CSS for the landing page video background */
 #video-bg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; 
+    height: auto; 
     z-index: -1;
 }
 
-/* Rest of your landing page styles remain the same */
-
-
-/* Style for the video tags */
-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* CSS for the navigation menu */
+/* CSS for the menu */
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: transparent; 
+    background-color: Transparent;
     color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%
-    transform: translate(-50%, -50%);
-    width: 100%;
-    z-index: 1;
 }
 
-/* Logo styles */
 .logo {
     display: flex;
     align-items: center;
@@ -70,127 +42,86 @@ video {
     color: white;
 }
 
-/* Logo image styles */
 .logo img {
-    width: 15%;
+    width: 25%;
     height: auto;
-    margin-right: 15px;
-    color: white;
+    margin-right: 10px;
 }
 
-/* Styles for menu items */
 .menu-items {
     list-style: none;
     display: flex;
     gap: 20px;
-    margin-right: 10px;
 }
 
-/* Styles for links */
 .menu-items li a {
     text-decoration: none;
     color: white;
-    font-weight: normal;
+    font-weight: regular;
     font-size: 16px;
 }
 
-/* Link hover styles */
+/* Style the links */
 .menu-items li a:hover {
     text-decoration: underline;
 }
 
-/* Centering the "Start Here" button */
+/* Content for Landing Page */
 .landing-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    max-width: 400px; /* Adjust the maximum width as needed */
+    max-width: 400px;
     padding: 20px;
     color: white;
 }
 
-@font-face {
-    font-family: 'Syncopate';
-    src: url(https://fonts.gstatic.com/s/syncopate/v21/pe0sMIuPIYBCpEV5eFdCBfe_Kdxicw.woff2) format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+.landing-content h1 {
+    color: #FFFFFF;
 }
 
-@font-face {
-    font-family: 'Original Surfer';
-    src: url(https://fonts.gstatic.com/s/originalsurfer/v22/RWmQoKGZ9vIirYntXJ3_MbekzNMSC0FuIFWcKg.woff2) format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-/* Description text styles */
 .landing-content .description {
-    font-weight: normal; /* Change to 'bold' if needed */
+    font-weight: regular;
     margin-bottom: 10px;
 }
 
-/* Styling for the "Start Here" button */
 .landing-content button {
-    background-color: #CB6CE6;
+    background-color: #000000;
     color: white;
     padding: 10px 40px;
     border: none;
     cursor: pointer;
     border-radius: 18px;
-    display: block;
-    margin-top: 20px; /* Adjust the margin to control the distance from the text */
-    font-size: 18px;
 }
 
-/* Button hover styles for the landing page */
 .landing-content button:hover {
     background-color: #005073;
 }
 
-/* CSS for page sections (used in both landing and studio pages) */
+/* CSS for Page Sections */
 .page-section {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    max-width: 400px; /* Adjust the maximum width as needed */
+    max-width: 400px;
     padding: 20px;
+    background-color: Transparent;
 }
 
-/* Heading styles for page sections */
 .page-section h1 {
-    font-family: 'Montez', cursive;
-    font-style: cursive;
-    font-size: 72px;
     color: #FFFFFF;
 }
 
-/* Prompt text styles for page sections */
 .page-section .prompt {
-    font-family: 'Syncopate', sans-serif;
-    font-weight: normal; /* Change to 'bold' if needed */
-    margin-bottom: 12px;
+    font-weight: regular;
+    margin-bottom: 10px;
     color: #FFFFFF;
 }
 
-/* Button styles used in page sections */
-button {
-    font-family: 'Original Surfer', sans-serif;
-    background-color: #CB6CE6;
-    color: white;
-    font-size: 12px;
-    padding: 10px 40px;
-    border: none;
-    cursor: pointer;
-    border-radius: 18px;
-}
-
-/* Input styles */
 input {
     width: 30%;
     padding: 10px;
@@ -198,3 +129,4 @@ input {
     border: 1px solid #0077b6;
     border-radius: 18px;
 }
+

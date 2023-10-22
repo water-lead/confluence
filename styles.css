@@ -88,7 +88,7 @@ body {
     width: 60%;
     height: auto;
     background-color: #8082FF;
-    color: #ffffff;
+    color: #FF3673;
     padding: 40px 135px;
     border: none;
     cursor: pointer;
@@ -96,7 +96,10 @@ body {
     transition: color 0.3s, border 0.3s;
     border: 1px solid #FF3673; /* Normal border style */
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Original Surfer';
+    src: url(https://fonts.gstatic.com/s/originalsurfer/v22/RWmQoKGZ9vIirYntXJ3_MbekzNMSC0FuIFWcKg.woff2) format('woff2');
 }
 
 .landing-section button:hover {

@@ -24,7 +24,7 @@ body {
     z-index: -1;
 }
 
-.memu {
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,12 +57,10 @@ body {
 
 /* Content styles for studio page page sections */
 .page-section {
-    position: absolute;
-    top: 840px;
-    left: 50%;
+    position: relative;
+    max-width: 100%;
     transform: translate(-50%, -50%);
     text-align: center;
-    max-width: 400px;
     padding: 20px;
     color: white;
 }

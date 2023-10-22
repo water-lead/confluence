@@ -7,6 +7,7 @@ body {
     background: #000; /* Set background color to black to cover any potential gaps */
 }
 
+/* Video container for the landing and studio pages */
 #video-container {
     position: fixed;
     top: 0;
@@ -16,6 +17,7 @@ body {
     overflow: hidden;
 }
 
+/* Video background styles for both landing and studio pages */
 #video-bg {
     position: absolute;
     top: 50%;
@@ -26,6 +28,7 @@ body {
     z-index: -1;
 }
 
+/* Style for the video tags */
 video {
     position: absolute;
     top: 0;
@@ -34,16 +37,17 @@ video {
     height: 100%;
 }
 
-/* CSS for the menu */
+/* CSS for the navigation menu */
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: Transparent;
+    background-color: transparent; /* Set your desired background color */
     color: white;
 }
 
+/* Logo styles */
 .logo {
     display: flex;
     align-items: center;
@@ -51,13 +55,15 @@ video {
     color: white;
 }
 
+/* Logo image styles */
 .logo img {
-    width: 25%; /* Adjust the size of the logo */
+    width: 25%; /* Adjust the size of the logo as needed */
     height: auto;
     margin-right: 10px;
     color: white;
 }
 
+/* Styles for menu items */
 .menu-items {
     list-style: none;
     display: flex;
@@ -65,38 +71,41 @@ video {
     margin-right: 10px;
 }
 
+/* Styles for links */
 .menu-items li a {
     text-decoration: none;
     color: white;
-    font-weight: regular;
+    font-weight: regular; /* Use 'normal' or 'bold' for font weight */
     font-size: 16px;
 }
 
-/* Style the links */
+/* Link hover styles */
 .menu-items li a:hover {
     text-decoration: underline;
 }
 
-/* Content for Landing Page */
+/* Content styles for the landing page */
 .landing-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    max-width: 400px;
+    max-width: 400px; /* Adjust the maximum width as needed */
     padding: 20px;
     color: white;
 }
 
+/* Landing page heading styles */
 .landing-content h1 {
     font-family: 'Montez', cursive;
-    font-style: Cursive;
+    font-style: cursive;
     font-size: 60px;
     font-weight: bold;
     color: #FFFFFF;
 }
 
+/* Font loading for Montez */
 @font-face {
     font-family: 'Montez';
     src: url(https://fonts.gstatic.com/s/montez/v22/845ZNMk5GoGIX8lW07rfa9yB_w.woff2) format('woff2');
@@ -105,26 +114,13 @@ video {
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Syncopate';
-    src: url(https://fonts.gstatic.com/s/syncopate/v21/pe0sMIuPIYBCpEV5eFdCBfe_Kdxicw.woff2) format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Original Surfer';
-    src: url(https://fonts.gstatic.com/s/originalsurfer/v22/RWmQoKGZ9vIirYntXJ3_MbekzNMSC0FuIFWcKg.woff2) format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+/* Description text styles */
 .landing-content .description {
-    font-weight: regular;
+    font-weight: normal; /* Change to 'bold' if needed */
     margin-bottom: 10px;
 }
 
+/* Button styles for the landing page */
 .landing-content button {
     background-color: #CB6CE6;
     color: white;
@@ -134,11 +130,12 @@ video {
     border-radius: 18px;
 }
 
+/* Button hover styles for the landing page */
 .landing-content button:hover {
     background-color: #005073;
 }
 
-/* CSS for Page Sections */
+/* CSS for page sections (used in both landing and studio pages) */
 .page-section {
     position: absolute;
     top: 50%;
@@ -149,23 +146,26 @@ video {
     padding: 20px;
 }
 
+/* Heading styles for page sections */
 .page-section h1 {
     font-family: 'Montez', cursive;
-    font-style: Cursive;
+    font-style: cursive;
     font-size: 72px;
     color: #FFFFFF;
 }
 
+/* Prompt text styles for page sections */
 .page-section .prompt {
-    font-family: 'Syncopate', sans-serif;;
-    font-weight: regular;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: normal; /* Change to 'bold' if needed */
     margin-bottom: 12px;
     color: #FFFFFF;
 }
 
+/* Button styles used in page sections */
 button {
     font-family: 'Original Surfer', sans-serif;
-        background-color: #CB6CE6;
+    background-color: #CB6CE6;
     color: white;
     font-size: 12px;
     padding: 10px 40px;
@@ -174,6 +174,7 @@ button {
     border-radius: 18px;
 }
 
+/* Input styles */
 input {
     width: 30%;
     padding: 10px;
@@ -183,4 +184,3 @@ input {
 }
 
 /* Additional styling can be added as needed */
-

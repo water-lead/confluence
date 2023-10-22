@@ -1,114 +1,131 @@
-
 body {
-    font-family: 'Syncopate', sans-serif;
-    margin: 0;
-    overflow: hidden;
-    background: #ffffff;
+  font-family: "Syncopate", sans-serif;
+  margin: 0;
+  overflow: hidden;
+  background: #ffffff;
 }
 
 #video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 #video-bg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%; 
-    height: auto; 
-    z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  z-index: -1;
 }
 
 /* CSS for the menu */
 .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: Transparent;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: Transparent;
+}
 .logo {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    color: white;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  width: 40%;
+  flex-shrink: 0;
+  display: flex;
 }
 
 .logo img {
-    width: 35%;
-    height: auto;
-    margin-right: 25px;
+  width: 30%;
+  height: auto;
+  margin-right: 25px;
+
 }
 
 .menu-items {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding-left: 0px;
 }
 
 .menu-items li a {
-    text-decoration: none;
-    color: #8082FF;
-    font-weight: bold;
-    font-size: 25px;
-    margin-right: 30;
+  text-decoration: none;
+  color: #8082ff;
+  font-weight: bold;
+  font-size: 25px;
+  margin-right: 30;
+}
+@media (max-width: 768px) {
+  .menu-items li a {
+    font-size: 18px;
+  }
 }
 
 /* Style the links */
 .menu-items li a:hover {
-    text-decoration: underline;
-    color: #FF3673;
+  text-decoration: underline;
+  color: #ff3673;
 }
-
+.centered{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
+/* } */
 /* Content for Landing Page */
 .landing-section {
-    position: absolute;
-    top: 840px;
-    left: 51.5%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    max-width: 400px;
-    padding: 20px;
-    color: white;
+  position: absolute;
+  /* top: 800px; */
+  bottom: 0;
+  left: 50%;
+  right:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  max-width: 400px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .landing-section .description {
-    font-weight: regular;
-    margin-bottom: 10px;
+  font-weight: regular;
+  margin-bottom: 10px;
 }
 
 .landing-section button {
-    width: 60%;
-    height: auto;
-    background-color: #8082FF;
-    color: #FFFFFF;
-    padding: 21px 140px;
-    border: none;
-    cursor: pointer;
-    border-radius: 40px;
-    transition: color 0.3s, border 0.3s;
-    border: 1px solid #FF3673; /* Normal border style */
-    cursor: pointer;
-    font-size: 30px;
-    font-weight: bold;
-    display: inline-flex;
-    font-family: 'Syncopate', sans-serif;
-    white-space: nowrap;
-    display: flex; /* Enable flexbox layout */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+  width: 60%;
+  height: auto;
+  background-color: #8082ff;
+  color: #ffffff;
+  padding: 21px 140px;
+  border: none;
+  cursor: pointer;
+  border-radius: 40px;
+  transition: color 0.3s, border 0.3s;
+  border: 1px solid #ff3673; /* Normal border style */
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-flex;
+  font-family: "Syncopate", sans-serif;
+  white-space: nowrap;
+  display: flex; /* Enable flexbox layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 .landing-section button:hover {
-    background-color: #FF3673;
-    color: #8082FF;
-    border: 1px solid #8082FF; 
+  background-color: #ff3673;
+  color: #8082ff;
+  border: 1px solid #8082ff;
 }
-

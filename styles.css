@@ -140,8 +140,8 @@ body {
 
 .page-section h1 {
     font-family: 'Parisienne', cursive;
-    font-style: Italic;
-    font-size: 66px;
+    font-style: Cursive;
+    font-size: 72px;
     color: #FFFFFF;
 }
 
@@ -156,7 +156,7 @@ button {
     font-family: 'Rubik Mono One', sans-serif;
         background-color: #CB6CE6;
     color: white;
-    font-size: 18px;
+    font-size: 12px;
     padding: 10px 40px;
     border: none;
     cursor: pointer;

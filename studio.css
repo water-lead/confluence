@@ -76,10 +76,10 @@ body {
 
 /* Heading styles for studio page page sections */
 .page-section h1 {
-  font-family: "Montez", cursive;
-  font-style: cursive;
-  font-size: 72px;
-  color: #000000;
+    font-family: 'Montez', cursive;
+    font-style: cursive;
+    font-size: 72px;
+    color: #000000;
 }
 @media (max-width: 768px) {
   .page-section h1 {
@@ -93,10 +93,10 @@ body {
 /* Prompt and description text styles */
 .page-section .prompt,
 .page-section .description {
-  font-family: "Syncopate", sans-serif;
-  font-weight: normal;
-  margin-bottom: 12px;
-  color: #000000;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: normal;
+    margin-bottom: 12px;
+    color: #000000;
 }
 
 /* Button styles */

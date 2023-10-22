@@ -1,7 +1,7 @@
 /* styles.css */
 
 body {
-    font-family: Optima, sans-serif;
+    font-family: 'Quintessential', serif;
     margin: 0;
     overflow: hidden;
     background: #000; /* Set background color to black to cover any potential gaps */
@@ -90,24 +90,24 @@ body {
 }
 
 @font-face {
-    font-family: 'Parisienne';
-    src: url(https://fonts.gstatic.com/s/parisienne/v13/E21i_d3kivvAkxhLEVZpQyZwD8CtevK5qw.woff2) format('woff2');
+    font-family: 'Montez';
+    src: url(https://fonts.gstatic.com/s/montez/v22/845ZNMk5GoGIX8lW07rfa9yB_w.woff2) format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Piazzolla';
-    src: url(https://fonts.gstatic.com/s/piazzolla/v35/N0b52SlTPu5rIkWIZjVKKtYtfxYqZ4RJBFzFfYUjkSDdlqZgy7LYxkL13gD9BRy4k5M.woff2) format('woff2');
+    font-family: 'Oregano';
+    src: url(https://fonts.gstatic.com/s/oregano/v15/If2IXTPxciS3H4S2oZDVPhvNzyI.woff2) format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Rubik Mono One';
-    src: url(https://fonts.gstatic.com/s/rubikmonoone/v18/UqyJK8kPP3hjw6ANTdfRk9YSN983TKUJcOj8.woff2) format('woff2');
+    font-family: 'Original Surfer';
+    src: url(https://fonts.gstatic.com/s/originalsurfer/v22/RWmQoKGZ9vIirYntXJ3_MbekzNMSC0FuIFWcKg.woff2) format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -143,21 +143,21 @@ body {
 }
 
 .page-section h1 {
-    font-family: 'Parisienne', cursive;
+    font-family: 'Montez', cursive;
     font-style: Cursive;
     font-size: 72px;
     color: #FFFFFF;
 }
 
 .page-section .prompt {
-    font-family: 'Piazzolla', sans-serif;
+    font-family: 'Oregano', cursive;
     font-weight: regular;
     margin-bottom: 12px;
     color: #FFFFFF;
 }
 
 button {
-    font-family: 'Rubik Mono One', sans-serif;
+    font-family: 'Original Surfer', sans-serif;
         background-color: #CB6CE6;
     color: white;
     font-size: 12px;

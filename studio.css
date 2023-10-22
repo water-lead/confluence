@@ -43,7 +43,7 @@ body {
 
 /* Content styles for studio page page sections */
 .page-section {
-    position: absolute
+    position: absolute;
     text-align: center;
     max-width: 100%;
     display: flex;
@@ -89,7 +89,7 @@ body {
     font-size: 30px;
     font-weight: bold;
     font-family: 'Syncopate', sans-serif;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
 }

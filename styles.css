@@ -70,7 +70,7 @@ body {
 /* Content for Landing Page */
 .landing-section {
     position: absolute;
-    top: 330px;
+    top: 800px;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;

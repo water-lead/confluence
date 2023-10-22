@@ -40,16 +40,18 @@ body {
 /* Content styles for studio page page sections */
 .page-section {
     position: absolute;
-    top: 50%;
+    top: 840px;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    max-width: 400px; /* Adjust the maximum width as needed */
+    max-width: 400px;
     padding: 20px;
+    color: white;
 }
 
 /* Heading styles for studio page page sections */
 .page-section h1 {
+    display: flex;
     font-family: 'Montez', cursive;
     font-style: cursive;
     font-size: 72px;
@@ -58,6 +60,7 @@ body {
 
 /* Prompt text styles for studio page page sections */
 .page-section .prompt {
+    display: flex;
     font-family: 'Syncopate', sans-serif;
     font-weight: normal; /* Change to 'bold' if needed */
     margin-bottom: 12px;
@@ -65,6 +68,7 @@ body {
 }
 
 .page-section button {
+    display: flex;
     width: 60%;
     height: auto;
     background-color: #8082FF;
@@ -76,10 +80,13 @@ body {
     transition: color 0.3s, border 0.3s;
     border: 1px solid #FF3673; /* Normal border style */
     cursor: pointer;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: bold;
-    font-family: 'Syncopate', san-serif;
-    src: url(https://fonts.gstatic.com/s/syncopate/v21/pe0pMIuPIYBCpEV5eFdKvtKqBP5vWVYgVw.woff2) format('woff2');
+    display: inline-flex;
+    font-family: 'Syncopate', sans-serif;
+    white-space: nowrap;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 .page-section button:hover {

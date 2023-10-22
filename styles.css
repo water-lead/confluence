@@ -70,7 +70,7 @@ body {
 /* Content for Landing Page */
 .landing-section {
     position: absolute;
-    top: 800px;
+    top: 840px;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -89,10 +89,10 @@ body {
     height: auto;
     background-color: #8082FF;
     color: #FF3673;
-    padding: 40px 75px;
+    padding: 40px 135px;
     border: none;
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: 35px;
     transition: color 0.3s, border 0.3s;
     border: 1px solid #FF3673; /* Normal border style */
     cursor: pointer;

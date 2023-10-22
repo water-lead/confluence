@@ -9,10 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
-
 </head>
 <body>
-     <!-- Navigation Menu -->
+    <!-- Navigation Menu -->
     <nav class="menu">
         <div class="logo">
             <img src="logo.png" alt="Token Studio Logo">
@@ -35,8 +34,48 @@
             <button>START HERE</button>
         </div>
     </section>
-       
-    </div>
+
+    <!-- Studio Page with Video Background -->
+    <section class="studio" id="STUDIO">
+        <video autoplay muted loop id="studio-video-bg">
+            <source src="studio-video.mp4" type="video/mp4">
+        </video>
+        <!-- Welcome Page -->
+        <section class="page-section" id="page1">
+            <h1>Welcome!</h1>
+            <p class="description">Our tool helps you generate creative designs. It asks for a few inputs which are used to generate unique designs.</p>
+            <button onclick="showNextPage(2)">START</button>
+        </section>
+
+        <!-- Page 1: Enter Industries -->
+        <section class="page-section" id="page2">
+            <h1>INDUSTRIES</h1>
+            <p class="prompt">Enter the industries you want to analyze:</p>
+            <input type="text" id="industry1" placeholder="Industry 1">
+            <input type="text" id "industry2" placeholder="Industry 2">
+            <button onclick="showNextPage(3)">NEXT</button>
+        </section>
+
+        <!-- Page 2: Enter Ideas -->
+        <section class="page-section" id="page3">
+            <h1>IDEAS</h1>
+            <p class="prompt">Enter the ideas you want to intersect (at least two):</p>
+            <input type="text" id="idea1" placeholder="Idea 1">
+            <input type="text" id="idea2" placeholder="Idea 2">
+            <input type="text" id="idea3" placeholder="Idea 3">
+            <input type="text" id="idea4" placeholder="Idea 4">
+            <input type="text" id="idea5" placeholder="Idea 5">
+            <button onclick="showNextPage(4)">NEXT</button>
+        </section>
+
+        <!-- Page 3: Results -->
+        <section class="page-section" id="page4">
+            <h1>RESULTS</h1>
+            <!-- Display results here -->
+            <button onclick="exportToPDF()">Export to PDF</button>
+            <button onclick="exportToDOCX()">Export to DOCX</button>
+        </section>
+    </section>
 
     <script src="script.js"></script>
 </body>

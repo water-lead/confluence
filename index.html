@@ -1,18 +1,26 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Token Studio</title>
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Studio</title>
+    <link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation Menu -->
+    <!-- Background Video -->
+    <video id="video-bg" autoplay muted loop>
+        <source src="background-video.mp4" type="video/mp4">
+    </video>
+
+    <div class="landing-content">
+        <!-- Navigation Menu -->
     <nav class="menu">
         <div class="logo">
             <img src="logo.png" alt="Token Studio Logo">
@@ -23,15 +31,15 @@
         </ul>
     </nav>
 
-    <!-- Landing Page with Video Background -->
-<section class="landing" id="landing">
-    <video autoplay muted loop id="video-bg">
-        <source src="background-video.mp4" type="video/mp4">
-    </video>
-    <div class="landing-content">
-        <button onclick="showNextPage(1)">START HERE</button>
+        <!-- Landing Page Content -->
+        <section class="landing-section" id="landing">
+            <div class="centered">
+                <button onclick="showNextPage(1)”>START HERE</button>
+            </div>
+        </section>
+
     </div>
-</section>
+
     <script src="script.js"></script>
 </body>
 </html>

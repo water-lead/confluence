@@ -1,5 +1,5 @@
 // Define the current page using a variable
-let currentPage = 1;
+let currentPage = 0;
 
 // Function to move to the next page
 function showNextPage() {
@@ -10,7 +10,7 @@ function showNextPage() {
     currentPage++;
 
     if (currentPage > 4) {
-        currentPage = 1; // If it exceeds the number of pages, reset to the first page
+        currentPage = 0; // If it exceeds the number of pages, reset to the first page
     }
 
     // Show the next page

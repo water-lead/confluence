@@ -41,7 +41,7 @@ body {
 }
 
 .logo img {
-    width: 30%;
+    width: 35%;
     height: auto;
     margin-right: 25px;
 }
@@ -79,13 +79,6 @@ body {
     color: white;
 }
 
-.landing-content h1 {
-    color: #FF3673;
-}
-.landing-content h1:hover {
-    color: #8082FF;
-}
-
 .landing-content .description {
     font-weight: regular;
     margin-bottom: 10px;
@@ -106,35 +99,5 @@ body {
 .landing-content button:hover {
     background-color: #FF3673;
     border-color: #8082FF;
-}
-
-/* CSS for Page Sections */
-.page-section {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    max-width: 400px;
-    padding: 20px;
-    background-color: Transparent;
-}
-
-.page-section h1 {
-    color: #FF3673;
-}
-
-.page-section .prompt {
-    font-weight: regular;
-    margin-bottom: 10px;
-    color: #FF3673;
-}
-
-input {
-    width: 30%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #0077b6;
-    border-radius: 18px;
 }
 

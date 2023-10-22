@@ -72,8 +72,8 @@ body {
     position: absolute;
     top: 800px;
     left: 50%;
-    width: 50%;
-    height: 50%;
+    width: 35%;
+    height: auto;
     transform: translate(-50%, -50%);
     text-align: center;
     max-width: 400px;
@@ -95,12 +95,14 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 25px;
-    border-color: #FF3673;
+    transition: color 0.3s, border 0.3s;
+    border: 2px solid #FF3673; /* Normal border style */
+    cursor: pointer;
 }
 
 .landing-section button:hover {
     background-color: #FF3673;
-    border-color: #8082FF;
     color: #8082FF;
+    border: 2px solid #8082FF; 
 }
 

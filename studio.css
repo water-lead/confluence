@@ -37,8 +37,15 @@ body {
     margin-right: 25px;
 }
 
-/* Content styles for studio page page sections */
 .studio-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: Transparent;
+
+/* Content styles for studio page page sections */
+.page-section {
     position: absolute;
     top: 840px;
     left: 50%;
@@ -50,7 +57,7 @@ body {
 }
 
 /* Heading styles for studio page page sections */
-.studio-section h1 {
+.page-section h1 {
     display: flex;
     font-family: 'Montez', cursive;
     font-style: cursive;
@@ -59,7 +66,7 @@ body {
 }
 
 /* Prompt text styles for studio page page sections */
-.studio-section .prompt {
+.page-section .prompt {
     display: flex;
     font-family: 'Syncopate', sans-serif;
     font-weight: normal; /* Change to 'bold' if needed */
@@ -67,7 +74,7 @@ body {
     color: #FFFFFF;
 }
 
-.studio-section button {
+.page-section button {
     display: flex;
     width: 60%;
     height: auto;
@@ -89,7 +96,7 @@ body {
     align-items: center; /* Center vertically */
 }
 
-.studio-section button:hover {
+.page-section button:hover {
     background-color: #FF3673;
     color: #8082FF;
     border: 1px solid #8082FF; 
@@ -106,4 +113,5 @@ input {
     font-weight: bold;
     font-family: 'Syncopate', san-serif;
     src: url(https://fonts.gstatic.com/s/syncopate/v21/pe0pMIuPIYBCpEV5eFdKvtKqBP5vWVYgVw.woff2) format('woff2');
+}
 }

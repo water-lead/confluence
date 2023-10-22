@@ -72,8 +72,6 @@ body {
     position: absolute;
     top: 800px;
     left: 50%;
-    width: 35%;
-    height: auto;
     transform: translate(-50%, -50%);
     text-align: center;
     max-width: 400px;
@@ -91,7 +89,7 @@ body {
     height: auto;
     background-color: #8082FF;
     color: #FF3673;
-    padding: 10px 40px;
+    padding: 20px 45px;
     border: none;
     cursor: pointer;
     border-radius: 25px;

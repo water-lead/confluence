@@ -55,7 +55,7 @@ body {
 .menu-items li a {
     text-decoration: none;
     color: #8082FF;
-    font-weight: regular;
+    font-weight: bold;
     font-size: 25px;
     margin-right: 25px;
 }
@@ -70,7 +70,7 @@ body {
 /* Content for Landing Page */
 .landing-content {
     position: absolute;
-    top: 50%;
+    top: 330px;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -80,7 +80,10 @@ body {
 }
 
 .landing-content h1 {
-    color: #FFFFFF;
+    color: #FF3673;
+}
+.landing-content h1:hover {
+    color: #8082FF;
 }
 
 .landing-content .description {
@@ -89,18 +92,20 @@ body {
 }
 
 .landing-content button {
-    width: 30%;
-    height: auto;
+    width: 80%;
+    height: 12%;
     background-color: #8082FF;
     color: white;
     padding: 10px 40px;
     border: none;
     cursor: pointer;
-    border-radius: 18px;
+    border-radius: 25px;
+    border-color: #FF3673;
 }
 
 .landing-content button:hover {
     background-color: #FF3673;
+    border-color: #8082FF;
 }
 
 /* CSS for Page Sections */
@@ -116,13 +121,13 @@ body {
 }
 
 .page-section h1 {
-    color: #FFFFFF;
+    color: #FF3673;
 }
 
 .page-section .prompt {
     font-weight: regular;
     margin-bottom: 10px;
-    color: #FFFFFF;
+    color: #FF3673;
 }
 
 input {

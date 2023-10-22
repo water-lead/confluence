@@ -26,15 +26,6 @@ body {
     z-index: -1;
 }
 
-/* CSS for the navigation menu */
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: transparent;
-}
-
 /* Logo styles */
 .logo {
     display: flex;

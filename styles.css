@@ -57,8 +57,7 @@ body {
     color: #8082FF;
     font-weight: bold;
     font-size: 25px;
-    margin-right: 25px;
-    left: 20%;
+    margin-right: 20;
 }
 
 /* Style the links */
@@ -90,10 +89,10 @@ body {
     height: auto;
     background-color: #8082FF;
     color: #FFFFFF;
-    padding: 25px 120px;
+    padding: 25px 130px;
     border: none;
     cursor: pointer;
-    border-radius: 35px;
+    border-radius: 40px;
     transition: color 0.3s, border 0.3s;
     border: 1px solid #FF3673; /* Normal border style */
     cursor: pointer;

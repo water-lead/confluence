@@ -85,7 +85,7 @@ body {
 /* Prompt and description text styles */
 .page-section .prompt,
 .page-section .description {
-    font-family: 'Syncopate', sans-serif;
+    font-family: 'Lora', serif;
     font-weight: normal;
     margin-bottom: 10px;
     color: #000000;

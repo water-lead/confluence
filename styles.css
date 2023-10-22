@@ -87,8 +87,8 @@ body {
 }
 
 .landing-section button {
-    width: 75%;
-    height: 75%;
+    width: 60%;
+    height: auto;
     background-color: #8082FF;
     color: #FF3673;
     padding: 10px 40px;
@@ -96,13 +96,13 @@ body {
     cursor: pointer;
     border-radius: 25px;
     transition: color 0.3s, border 0.3s;
-    border: 2px solid #FF3673; /* Normal border style */
+    border: 1px solid #FF3673; /* Normal border style */
     cursor: pointer;
 }
 
 .landing-section button:hover {
     background-color: #FF3673;
     color: #8082FF;
-    border: 2px solid #8082FF; 
+    border: 1px solid #8082FF; 
 }
 

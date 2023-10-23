@@ -34,7 +34,7 @@ export async function POST(req: Request) {
 
     The analysis should include specific industry applications.
     
-    Each design should generate a text to image prompt to represent the industry application, they shoud be defined by: ${image-text1}, ${image-text2}, ${image-text3}, ${image-text4}, ${image-text5}`,
+    Each design should generate a text to image prompt to represent the industry application, they shoud be defined by: ${image-text1}, ${image-text2}, ${image-text3}, ${image-text4}, ${image-text5} respectively`,
   });
 
  async function getImageFromDescription(description) {

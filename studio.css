@@ -5,6 +5,23 @@ body {
   background: #fff;
 }
 
+
+@media (min-width: 768px) {
+  .studio-desktop-v {
+    display: flex;
+  }
+  .studio-mobile-v {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .studio-desktop-v {
+    display: none;
+  }
+  .studio-mobile-v {
+    display: flex;
+  }
+}
 /* Styles for the video container */
 #video-container {
   position: fixed;
@@ -101,7 +118,7 @@ body {
 .page-section button {
   /* width: 60%; */
   background-color: #8082ff;
-  color: #ff3673;
+  color: #ffffff;
   padding: 12px 30px;
   border: none;
   cursor: pointer;
@@ -120,7 +137,7 @@ body {
   .page-section button {
     width: 100%;
     background-color: #8082ff;
-    color: #ff3673;
+    color: #ffffff;
     padding: 15px 10px;
     border: none;
     cursor: pointer;
@@ -140,7 +157,7 @@ body {
 /* Button hover styles */
 .page-section button:hover {
   background-color: #ff3673;
-  color: #8082ff;
+  color: #ffffff;
   border: 1px solid #8082ff;
 }
 

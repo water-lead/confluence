@@ -5,6 +5,23 @@ body {
   background: #ffffff;
 }
 
+@media (min-width: 768px) {
+  .desktop-v {
+    display: flex;
+  }
+  .mobile-v {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .desktop-v {
+    display: none;
+  }
+  .mobile-v {
+    display: flex;
+  }
+}
+
 #video-container {
   position: fixed;
   top: 0;
@@ -128,7 +145,7 @@ body {
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
 }
-@media (max-width:500px) {
+@media (max-width: 768px) {
   .landing-section button {
     width: 100%;
     height: auto;

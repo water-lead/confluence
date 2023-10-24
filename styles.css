@@ -134,6 +134,7 @@ body {
 /* Button styling */
 .startButton, .email, .password {
     transition: all 0.5s;
+    background-color: #A5f2f9;
     width: 45%;
     position: fixed;
     top: 50%;

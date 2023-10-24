@@ -66,13 +66,14 @@ body {
   color: white;
   width: 40%;
   flex-shrink: 0;
-  display: flex;
+  position: fixed;
 }
 
 .logo img {
   width: 30%;
   height: auto;
-  margin-right: 25px;
+  margin-left: 25px;
+  position: fixed;
 }
 /* Content styles for studio page page sections */
 .page-section {

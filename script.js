@@ -31,22 +31,21 @@ function transformToEmailForm() {
     document.getElementById('authEmail').focus();
 }
 
-function authentication(step) {
-    if (step === 1) {
-        const email = document.getElementById('authEmail').value;
-        
-        // Check if email is in the invitations collection in Firestore
-        const docRef = db.collection("invitations").doc(email);
-        docRef.get().then((docSnapshot) => {
-            if (docSnapshot.exists) {
-                // Email exists in the invitation collection
-                // Redirect or show a registration form here
-                window.location.href = "studio.html";
-            } else {
-                alert("Sorry, you do not have an invitation.");
-            }
-        });
-    }
+function authenticateUser() {
+    var email = document.getElementById('emailInput').value;
+
+    // For example, signing in with email and password (add your own error handling)
+    firebase.auth().signInWithEmailAndPassword(email, password)
+    .then((userCredential) => {
+        // Signed in 
+        var user = userCredential.user;
+        console.log("User signed in: ", user);
+    })
+    .catch((error) => {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.error("Error signing in: ", errorMessage);
+    });
 }
        
 let currentPage = 1;

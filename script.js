@@ -24,10 +24,15 @@ var uiConfig = {
 // Initialize the FirebaseUI Widget using Firebase
 var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
+function displayEmailForm() {
+    document.getElementById('startButton').style.display = 'none';  // Hide the start button
+    document.getElementById('emailForm').style.display = 'block';  // Display the email input form
+}
+
 function authentication(step) {
     if (step === 1) {
-        const email = prompt("Please enter your email to access the studio:");
-
+        const email = document.getElementById('authEmail').value;
+        
         // Check if email is in the invitations collection in Firestore
         const docRef = db.collection("invitations").doc(email);
         docRef.get().then((docSnapshot) => {
@@ -41,7 +46,7 @@ function authentication(step) {
         });
     }
 }
-
+       
 let currentPage = 1;
 
 function showNextPage(nextPage) {

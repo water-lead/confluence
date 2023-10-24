@@ -124,52 +124,38 @@ body {
   /*margin-bottom: 10px;*/
 }
 
-.landing-section button {
-  width: 45%;
-  height: auto;
-  background-color: #8082ff;
-  color: #ffffff;
-  padding: 18px 130px;
-  border: none;
-  cursor: pointer;
-  border-radius: 40px;
-  transition: color 0.3s, border 0.3s;
-  border: 1px solid #ff3673; /* Normal border style */
-  cursor: pointer;
-  font-size: 30px;
-  font-weight: bold;
-  display: inline-flex;
-  font-family: "Syncopate", sans-serif;
-  white-space: nowrap;
-  display: flex; /* Enable flexbox layout */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-}
-@media (max-width: 768px) {
-  .landing-section button {
-    width: 100%;
-    height: auto;
-    background-color: #8082ff;
-    color: #ffffff;
-    padding: 15px 100px;
-    border: none;
-    cursor: pointer;
-    border-radius: 40px;
-    transition: color 0.3s, border 0.3s;
-    border: 1px solid #ff3673; /* Normal border style */
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-    display: inline-flex;
-    font-family: "Syncopate", sans-serif;
-    white-space: nowrap;
-    display: flex; /* Enable flexbox layout */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-  }
+.transformable-button {
+    padding: 10px 20px;
+    transition: all 0.5s;  /* Adjust transition speed as desired */
+    overflow: hidden;
+    width: 100px;  /* Adjust width as per the design */
+    position: relative;
 }
 
-.landing-section button:hover {
+.email-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;  /* Disallow interaction initially */
+    transition: all 0.5s;  /* Adjust transition speed as desired */
+}
+
+.transformed .email-form {
+    opacity: 1;
+    pointer-events: all;  /* Allow interaction now */
+}
+
+.transformed {
+    padding: 5px;
+    background-color: transparent;  /* Or set to the background color of your page */
+    border: none;
+    width: 200px;  /* Adjust width as per the design */
+}
+
+
+.transformable-button button:hover {
   background-color: #ff3673;
   color: #8082ff;
   border: 1px solid #8082ff;

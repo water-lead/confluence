@@ -13,8 +13,6 @@ const auth = firebase.auth();
 const db = firebase.firestore();
 const analytics = firebase.analytics();
 
-let currentPage = 1;
-
 // FirebaseUI config
 var uiConfig = {
     signInSuccessUrl: 'studio.html',
@@ -43,6 +41,8 @@ function authentication(step) {
         });
     }
 }
+
+let currentPage = 1;
 
 function showNextPage(nextPage) {
     document.getElementById('page' + currentPage).style.display = 'none';

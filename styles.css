@@ -66,6 +66,7 @@ body {
   padding: 10px 20px;
   background-color: Transparent;
 }
+
 .logo {
   display: flex;
   align-items: center;
@@ -98,15 +99,19 @@ body {
   font-weight: bold;
   font-size: 25px;
   margin-right: 30px;
+  transform: translate(-50%, -50%);
 }
+
 @media (max-width: 768px) {
   .menu-items li a {
     font-size: 18px;
+    transform: translate(-50%, -50%);
   }
 }
 @media (max-width: 500px) {
   .menu-items li a {
     font-size: 14px;
+    transform: translate(-50%, -50%);
   }
 }
 

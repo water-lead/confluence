@@ -77,11 +77,11 @@ body {
 }
 /* Content styles for studio page page sections */
 .page-section {
+  display: none;
   position: absolute;
   text-align: center;
   max-width: 600px;
   width: 100%;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   /* padding: 20px; */
@@ -90,6 +90,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+}
+
+#page1 {
+    display: block;
 }
 
 /* Heading styles for studio page page sections */

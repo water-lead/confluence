@@ -183,11 +183,10 @@ body {
 
 .transformed {
     padding: 5px;
-    background-color: transparent;  /* Or set to the background color of your page */
+    background-color: white;  /* Or set to the background color of your page */
     border: none;
     width: 200px;  /* Adjust width as per the design */
 }
-
 
 .transformable-button:hover {
   background-color: #ff3673;

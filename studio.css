@@ -117,7 +117,7 @@ body {
 @media (max-width: 500px){
   .page-section button {
   width: 100%;
-  background-color: #A5f2f9;
+  background-color: #5077a7;
   color: #ffffff;
   padding: 12px 30px;
   border: none;
@@ -137,7 +137,7 @@ body {
 
 /* Button hover styles */
 .page-section button:hover {
-  background-color: #5077a7;
+  background-color: #7aa3d6;
   color: #FFFFFF;
   border: 1.5px solid #ffffff;
 }

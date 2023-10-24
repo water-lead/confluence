@@ -48,16 +48,18 @@
             <li><a href="mailto:bmosuro@waterdesigns.io">CONTACT</a></li>
         </ul>
     </nav>
-
+    
     <div class="landing-content">
         <!-- Landing Page Content -->
         <section class="landing-section" id="landing">
                 <div id="firebaseui-auth-container">
                 <div class="centered">
-                  <button id="startButton" onclick="transformToEmailForm()">START</button>
-    <div id="emailForm" style="display:none;">
+                  <button id="startButton" class="transformable-button" onclick="transformToEmailForm()">
+    START
+    <div id="emailForm" class="email-form">
         <input type="email" id="authEmail" placeholder="Enter your email">
-        <button onclick="authentication(1)">Submit</button>
+    </div>
+</button>
     </div>
         </section>
     </div>

@@ -88,9 +88,8 @@ body {
   list-style: none;
   display: flex;
   gap: 20px;
-  margin-right: 25px:
+  margin-right: 25px;
   padding-left: 0px;
-  transform: translate(-50%, -50%);
 }
 
 .menu-items li a {
@@ -148,7 +147,7 @@ body {
   /*margin-bottom: 10px;*/
 }
 
-.transformable-button {
+.startButton {
     transition: all 0.5s;  /* Adjust transition speed as desired */
     overflow: hidden;
     width: 100px;  /* Adjust width as per the design */
@@ -172,7 +171,7 @@ body {
     align-items: center; /* Center vertically */
 }
 
-.email-form {
+.email {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -200,20 +199,30 @@ body {
     align-items: center; /* Center vertically */
 }
 
-.transformed .email-form {
-    opacity: 1;
-    pointer-events: all;  /* Allow interaction now */
-}
-
-.transformed {
-    padding: 5px;
-    background-color: white;  /* Or set to the background color of your page */
-    border: none;
-    width: 200px;  /* Adjust width as per the design */
-}
-
-.transformable-button:hover {
-  background-color: #5077a7;
+.password {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;  /* Disallow interaction initially */
+  transition: all 0.5s;  /* Adjust transition speed as desired */
+  width: 45%;
+  height: auto;
+  background-color: #ffffff;
   color: #ffffff;
-  border: 1.5px solid #ffffff;
+  padding: 18px 130px;
+  border: none;
+  cursor: pointer;
+  border-radius: 40px;
+  border: 1.5px solid #4d72a0; /* Normal border style */
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: normal;
+  display: inline-flex;
+  font-family: "Syncopate", sans-serif;
+  white-space: nowrap;
+  display: flex; /* Enable flexbox layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }

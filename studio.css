@@ -64,7 +64,7 @@ body {
   align-items: center;
   font-size: 24px;
   color: white;
-  width: 40%;
+  width: 25%;
   flex-shrink: 0;
   position: fixed;
 }
@@ -118,14 +118,14 @@ body {
 /* Button styles */
 .page-section button {
   /* width: 60%; */
-  background-color: #8082ff;
+  background-color: #A5f2f9;
   color: #ffffff;
   padding: 12px 30px;
   border: none;
   cursor: pointer;
   border-radius: 35px;
   transition: color 0.3s, border 0.3s;
-  border: 1px solid #ff3673; /* Normal border style */
+  border: 1.5px solid #ffffff; /* Normal border style */
   cursor: pointer;
   font-size: 12px;
   font-weight: light;
@@ -137,14 +137,14 @@ body {
 @media (max-width: 500px) {
   .page-section button {
     width: 100%;
-    background-color: #8082ff;
+    background-color: #A5f2f9;
     color: #ffffff;
     padding: 15px 10px;
     border: none;
     cursor: pointer;
     border-radius: 35px;
     transition: color 0.3s, border 0.3s;
-    border: 1px solid #ff3673; /* Normal border style */
+    border: 1.5px solid #ffffff; /* Normal border style */
     cursor: pointer;
     font-size: 12px;
     font-weight: ligt;
@@ -157,9 +157,9 @@ body {
 
 /* Button hover styles */
 .page-section button:hover {
-  background-color: #ff3673;
+  background-color: #5077a7;
   color: #000000;
-  border: 1px solid #8082ff;
+  border: 1.5px solid #ffffff;
 }
 
 /* Input styles */
@@ -167,7 +167,7 @@ input {
   width: 30%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #0077b6;
+  border: 1.5px solid #0077b6;
   border-radius: 18px;
   font-size: 12px;
   font-weight: light;

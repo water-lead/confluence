@@ -1,10 +1,3 @@
-<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-analytics-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore-compat.js"></script>
-
-<script>
-// Using global firebase object
 const firebaseConfig = {
     apiKey: "AIzaSyD_pNw4ZIfdKNWunsCxMuHAotCBVPITa3I",
     authDomain: "confluence-auth-8d9d6.firebaseapp.com",
@@ -24,20 +17,16 @@ let currentPage = 1;
 
 // FirebaseUI config
 var uiConfig = {
-    signInSuccessUrl: 'studio.html', // Where to redirect after successful sign-in
+    signInSuccessUrl: 'studio.html',
     signInOptions: [
         firebase.auth.EmailAuthProvider.PROVIDER_ID,
-        // Add other providers as needed
     ],
 };
 
 // Initialize the FirebaseUI Widget using Firebase
 var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
-// The start method will wait until the DOM is loaded
-/*ui.start('#firebaseui-auth-container', uiConfig);*/
-
-function authentication(step){
+function authentication(step) {
     if (step === 1) {
         const email = prompt("Please enter your email for verification:");
 
@@ -88,4 +77,4 @@ document.getElementById('page7').style.display = 'none';
 document.getElementById('page8').style.display = 'none';
 document.getElementById('page9').style.display = 'none';
 document.getElementById('page10').style.display = 'none';
-</script>
+

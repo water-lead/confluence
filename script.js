@@ -86,8 +86,15 @@ document.addEventListener('DOMContentLoaded', function() {
         authenticateUser();
     }
 
-    // Simplified page initialization
-    for (let i = 1; i <= 10; i++) {
-        document.getElementById('page' + i).style.display = (i === 1) ? 'block' : 'none';
-    }
+    // Initially, show the first page and hide the others
+    document.getElementById('page1').style.display = 'block';
+    document.getElementById('page2').style.display = 'none';
+    document.getElementById('page3').style.display = 'none';
+    document.getElementById('page4').style.display = 'none';
+    document.getElementById('page5').style.display = 'none';
+    document.getElementById('page6').style.display = 'none';
+    document.getElementById('page7').style.display = 'none';
+    document.getElementById('page8').style.display = 'none';
+    document.getElementById('page9').style.display = 'none';
+    document.getElementById('page10').style.display = 'none';
 });

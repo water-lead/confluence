@@ -72,7 +72,10 @@ function exportToDOCX() {
     // Implement DOCX export logic here
     alert('Exporting to DOCX...');
 }
-
+document.getElementById('emailForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevents default form submission which refreshes the page
+    authenticateUser();
+});
 // Initially, show the first page and hide the others
 document.getElementById('page1').style.display = 'block';
 document.getElementById('page2').style.display = 'none';

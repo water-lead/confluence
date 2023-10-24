@@ -22,16 +22,9 @@ var uiConfig = {
 
 var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
-function transformToEmailForm() {
-    const button = document.getElementById('startButton');
-    button.innerText = '';  // Clear 'START' text
-    button.classList.add('transformed');
-    document.getElementById('authEmail').focus();
-}
-
 function authenticateUser() {
     var email = document.getElementById('emailInput').value;
-    var password = document.getElementById('passwordInput').value; // Get password here
+    var password = document.getElementById('passwordInput').value;
 
     firebase.auth().signInWithEmailAndPassword(email, password)
     .then((userCredential) => {
@@ -62,7 +55,7 @@ function showNextPage(nextPageId) {
 }
 
 function showPreviousPage(prevPageId) {
-    showNextPage(prevPageId);  // Use the same function to show the previous page
+    showNextPage(prevPageId);
 }
 
 function exportToPDF() {
@@ -73,28 +66,28 @@ function exportToDOCX() {
     alert('Exporting to DOCX...');
 }
 
-// Wait for DOM to load before setting up event listeners and initial display
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('startButton').addEventListener('click', transformToEmailForm);
-    document.getElementById('emailForm').addEventListener('submit', function(e) {
-        e.preventDefault(); // Prevents default form submission which refreshes the page
+    const startButton = document.getElementById('startButton');
+    const emailForm = document.getElementById('email');
+    const passwordForm = document.getElementById('password');
+    
+    startButton.onclick = function() {
+        this.style.display = 'none'; // Hide the start button
+        emailForm.style.display = 'block'; // Show email form
+    }
+
+    emailForm.oninput = function() {
+        this.style.display = 'none'; // Hide email form
+        passwordForm.style.display = 'block'; // Show password form
+    }
+
+    passwordForm.onsubmit = function(event) {
+        event.preventDefault();
         authenticateUser();
-    });
+    }
 
     // Simplified page initialization
-    //for (let i = 1; i <= 10; i++) {
-      //  document.getElementById('page' + i).style.display = (i === 1) ? 'block' : 'none';
-    //}
-
-    // Initially, show the first page and hide the others
-    document.getElementById('page1').style.display = 'block';
-    document.getElementById('page2').style.display = 'none';
-    document.getElementById('page3').style.display = 'none';
-    document.getElementById('page4').style.display = 'none';
-    document.getElementById('page5').style.display = 'none';
-    document.getElementById('page6').style.display = 'none';
-    document.getElementById('page7').style.display = 'none';
-    document.getElementById('page8').style.display = 'none';
-    document.getElementById('page9').style.display = 'none';
-    document.getElementById('page10').style.display = 'none';
+    for (let i = 1; i <= 10; i++) {
+        document.getElementById('page' + i).style.display = (i === 1) ? 'block' : 'none';
+    }
 });

@@ -13,7 +13,6 @@ const auth = firebase.auth();
 const db = firebase.firestore();
 const analytics = firebase.analytics();
 
-// FirebaseUI config
 var uiConfig = {
     signInSuccessUrl: 'studio.html',
     signInOptions: [
@@ -21,24 +20,21 @@ var uiConfig = {
     ],
 };
 
-// Initialize the FirebaseUI Widget using Firebase
 var ui = new firebaseui.auth.AuthUI(firebase.auth());
-var password = document.getElementById('passwordInput').value; // Assuming 'passwordInput' is the ID of the password input field.
 
 function transformToEmailForm() {
     const button = document.getElementById('startButton');
-    button.innerText = '';  /* Clear 'START' text */
+    button.innerText = '';  // Clear 'START' text
     button.classList.add('transformed');
     document.getElementById('authEmail').focus();
 }
 
 function authenticateUser() {
     var email = document.getElementById('emailInput').value;
+    var password = document.getElementById('passwordInput').value; // Get password here
 
-    // For example, signing in with email and password (add your own error handling)
     firebase.auth().signInWithEmailAndPassword(email, password)
     .then((userCredential) => {
-        // Signed in 
         var user = userCredential.user;
         console.log("User signed in: ", user);
     })
@@ -48,7 +44,7 @@ function authenticateUser() {
         console.error("Error signing in: ", errorMessage);
     });
 }
-       
+
 let currentPage = 1;
 
 function showNextPage(nextPage) {
@@ -64,29 +60,23 @@ function showPreviousPage(previousPage) {
 }
 
 function exportToPDF() {
-    // Implement PDF export logic here
     alert('Exporting to PDF...');
 }
 
 function exportToDOCX() {
-    // Implement DOCX export logic here
     alert('Exporting to DOCX...');
 }
 
-document.getElementById('startButton').addEventListener('click', transformToEmailForm);
-document.getElementById('emailForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevents default form submission which refreshes the page
-    authenticateUser();
-});
-// Initially, show the first page and hide the others
-document.getElementById('page1').style.display = 'block';
-document.getElementById('page2').style.display = 'none';
-document.getElementById('page3').style.display = 'none';
-document.getElementById('page4').style.display = 'none';
-document.getElementById('page5').style.display = 'none';
-document.getElementById('page6').style.display = 'none';
-document.getElementById('page7').style.display = 'none';
-document.getElementById('page8').style.display = 'none';
-document.getElementById('page9').style.display = 'none';
-document.getElementById('page10').style.display = 'none';
+// Wait for DOM to load before setting up event listeners and initial display
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('startButton').addEventListener('click', transformToEmailForm);
+    document.getElementById('emailForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevents default form submission which refreshes the page
+        authenticateUser();
+    });
 
+    // Simplified page initialization
+    for (let i = 1; i <= 10; i++) {
+        document.getElementById('page' + i).style.display = (i === 1) ? 'block' : 'none';
+    }
+});

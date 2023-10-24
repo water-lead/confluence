@@ -60,20 +60,20 @@ body {
 }
 /* Logo styles */
 .logo {
-  display: flex;
-  align-items: center;
-  font-size: 24px;
-  color: white;
-  width: 20%;
-  flex-shrink: 0;
-  position: fixed;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    width: 40%;
+    margin-left: 25px;
+    top: 20px;
+    left: 15px
 }
 
 .logo img {
-  width: 10%;
-  height: auto;
-  margin-left: 25px;
-  position: fixed;
+    width: 12%;
+    height: auto;
+    transform: translate(-50%, -50%);
 }
 /* Content styles for studio page page sections */
 .page-section {

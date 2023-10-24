@@ -1,17 +1,20 @@
 <body>
-<script type="module">
-import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
 
+<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-analytics-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore-compat.js"></script>
+
+
+<script>
 const firebaseConfig = {
-  apiKey: "AIzaSyD_pNw4ZIfdKNWunsCxMuHAotCBVPITa3I",
-  authDomain: "confluence-auth-8d9d6.firebaseapp.com",
-  projectId: "confluence-auth-8d9d6",
-  storageBucket: "confluence-auth-8d9d6.appspot.com",
-  messagingSenderId: "240489843371",
-  appId: "1:240489843371:web:758608b4ab14c536b745ee",
-  measurementId: "G-0F4C8M353B"
+    apiKey: "AIzaSyD_pNw4ZIfdKNWunsCxMuHAotCBVPITa3I",
+    authDomain: "confluence-auth-8d9d6.firebaseapp.com",
+    projectId: "confluence-auth-8d9d6",
+    storageBucket: "confluence-auth-8d9d6.appspot.com",
+    messagingSenderId: "240489843371",
+    appId: "1:240489843371:web:758608b4ab14c536b745ee",
+    measurementId: "G-0F4C8M353B"
 };
 
 const app = initializeApp(firebaseConfig);

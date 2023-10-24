@@ -1,3 +1,5 @@
+<body>
+<script type="module">
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
@@ -70,3 +72,5 @@ document.getElementById('page7').style.display = 'none';
 document.getElementById('page8').style.display = 'none';
 document.getElementById('page9').style.display = 'none';
 document.getElementById('page10').style.display = 'none';
+</script>
+  </body>

@@ -45,18 +45,24 @@ function authenticateUser() {
     });
 }
 
-let currentPage = 0;
+let currentPage = 1;
 
-function showNextPage(nextPage) {
-    document.getElementById('page' + currentPage).style.display = 'none';
-    currentPage = nextPage;
-    document.getElementById('page' + currentPage).style.display = 'block';
+function showNextPage(nextPageId) {
+    // Hide all page sections
+    const pages = document.querySelectorAll('.page-section');
+    pages.forEach(page => {
+        page.style.display = 'none';
+    });
+
+    // Show the next page section
+    const nextPage = document.getElementById(`page${nextPageId}`);
+    if (nextPage) {
+        nextPage.style.display = 'block';
+    }
 }
 
-function showPreviousPage(previousPage) {
-    document.getElementById('page' + currentPage).style.display = 'none';
-    currentPage = previousPage;
-    document.getElementById('page' + currentPage).style.display = 'block';
+function showPreviousPage(prevPageId) {
+    showNextPage(prevPageId);  // Use the same function to show the previous page
 }
 
 function exportToPDF() {

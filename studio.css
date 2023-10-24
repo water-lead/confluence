@@ -35,7 +35,7 @@ body {
 /* Video background styles for the studio page */
 
 @media (min-width: 1536px) {
-  #studio-video-bg {
+  #studio-video-bg-desktop {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -47,7 +47,7 @@ body {
   }
 }
 @media (max-width: 1536px) {
-  #studio-video-bg {
+  #studio-video-bg-mobile {
     position: absolute;
     top: 50%;
     left: 50%;

@@ -71,10 +71,33 @@ body {
 }
 
 .logo img {
-    width: 12%;
+    width: 25%;
     height: auto;
     transform: translate(-50%, -50%);
+    top: 20px;
+    left: 15px
 }
+
+@media (max-width: 768px) {
+    .logo img {
+    width: 16%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    top: 16px;
+    left: 12px
+}
+}
+
+@media (max-width: 500px) {
+    .logo img {
+    width: 10%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    top: 12px;
+    left: 10px
+}
+}
+
 /* Content styles for studio page page sections */
 .page-section {
   display: none;

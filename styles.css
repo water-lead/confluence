@@ -23,7 +23,7 @@ body {
 }
 
 @media (min-width: 1536px) {
-  #desktop-video-bg {
+  #video-bg-desktop {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -36,7 +36,7 @@ body {
 }
 
 @media (max-width: 1536px) {
-  #mobile-video-bg {
+  #video-bg-mobile {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -153,7 +153,7 @@ body {
     cursor: pointer;
     border-radius: 40px;
     transition: color 0.3s, border 0.3s;
-    border: 1px solid #ffffff; /* Normal border style */
+    border: 1.5px solid #ffffff; /* Normal border style */
     cursor: pointer;
     font-size: 30px;
     font-weight: bold;
@@ -181,7 +181,7 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 40px;
-    border: 1px solid #4d72a0; /* Normal border style */
+    border: 1.5px solid #4d72a0; /* Normal border style */
     cursor: pointer;
     font-size: 30px;
     font-weight: normal;
@@ -207,6 +207,6 @@ body {
 
 .transformable-button:hover {
   background-color: #4d72a0;
-  color: #000000;
-  border: 1px solid #ffffff;
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
 }

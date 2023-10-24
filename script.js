@@ -24,9 +24,9 @@ var uiConfig = {
 // Initialize the FirebaseUI Widget using Firebase
 var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
-function displayEmailForm() {
+function transformToEmailForm() {
     document.getElementById('startButton').style.display = 'none';  // Hide the start button
-    document.getElementById('emailForm').style.display = 'block';  // Display the email input form
+    document.getElementById('emailForm').style.display = 'inline-block';  // Display the email input and the Submit button
 }
 
 function authentication(step) {

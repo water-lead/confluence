@@ -78,7 +78,7 @@ body {
   color: #8082ff;
   font-weight: bold;
   font-size: 25px;
-  margin-right: 30;
+  margin-right: 30px;
 }
 @media (max-width: 768px) {
   .menu-items li a {
@@ -101,7 +101,7 @@ body {
   justify-content: center;
   width: 100%;
 }
-/* } */
+
 /* Content for Landing Page */
 .landing-section {
   position: absolute;
@@ -155,7 +155,7 @@ body {
 }
 
 
-.transformable-button button:hover {
+.transformable-button:hover {
   background-color: #ff3673;
   color: #8082ff;
   border: 1px solid #8082ff;

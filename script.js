@@ -23,6 +23,7 @@ var uiConfig = {
 
 // Initialize the FirebaseUI Widget using Firebase
 var ui = new firebaseui.auth.AuthUI(firebase.auth());
+var password = document.getElementById('passwordInput').value; // Assuming 'passwordInput' is the ID of the password input field.
 
 function transformToEmailForm() {
     const button = document.getElementById('startButton');
@@ -71,6 +72,8 @@ function exportToDOCX() {
     // Implement DOCX export logic here
     alert('Exporting to DOCX...');
 }
+
+document.getElementById('startButton').addEventListener('click', transformToEmailForm);
 document.getElementById('emailForm').addEventListener('submit', function(e) {
     e.preventDefault(); // Prevents default form submission which refreshes the page
     authenticateUser();

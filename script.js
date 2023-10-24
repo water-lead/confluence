@@ -26,7 +26,7 @@ var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
 function authentication(step) {
     if (step === 1) {
-        const email = prompt("Please enter your email for verification:");
+        const email = prompt("Please enter your email to access the studio:");
 
         // Check if email is in the invitations collection in Firestore
         const docRef = db.collection("invitations").doc(email);
@@ -51,9 +51,9 @@ function showNextPage(nextPage) {
 }
 
 function showPreviousPage(previousPage) {
-    document.getElementById('page' - currentPage).style.display = 'none';
+    document.getElementById('page' + currentPage).style.display = 'none';
     currentPage = previousPage;
-    document.getElementById('page' - currentPage).style.display = 'block';
+    document.getElementById('page' + currentPage).style.display = 'block';
 }
 
 function exportToPDF() {

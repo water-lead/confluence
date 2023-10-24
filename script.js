@@ -25,8 +25,10 @@ var uiConfig = {
 var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
 function transformToEmailForm() {
-    document.getElementById('startButton').style.display = 'none';  // Hide the start button
-    document.getElementById('emailForm').style.display = 'inline-block';  // Display the email input and the Submit button
+    const button = document.getElementById('startButton');
+    button.innerText = '';  /* Clear 'START' text */
+    button.classList.add('transformed');
+    document.getElementById('authEmail').focus();
 }
 
 function authentication(step) {

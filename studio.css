@@ -92,10 +92,6 @@ body {
   z-index: 1;
 }
 
-#page1 {
-    display: block;
-}
-
 /* Heading styles for studio page page sections */
 .page-section h1 {
     font-family: 'Aclonica', sans-serif;

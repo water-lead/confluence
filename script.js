@@ -67,24 +67,20 @@ function exportToDOCX() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    const startButton = document.getElementById('startButton');
-    const emailForm = document.getElementById('email');
-    const passwordForm = document.getElementById('password');
-    
-    startButton.onclick = function() {
+    document.getElementById('startButton').addEventListener('click', function() {
         this.style.display = 'none'; // Hide the start button
-        emailForm.style.display = 'block'; // Show email form
-    }
+        document.getElementById('emailForm').style.display = 'block'; // Show email form
+    });
 
-    emailForm.oninput = function() {
+    document.getElementById('email').addEventListener('input', function() {
         this.style.display = 'none'; // Hide email form
-        passwordForm.style.display = 'block'; // Show password form
-    }
+        document.getElementById('passwordForm').style.display = 'block'; // Show password form
+    });
 
-    passwordForm.onsubmit = function(event) {
+    document.getElementById('password').addEventListener('submit', function(event) {
         event.preventDefault();
         authenticateUser();
-    }
+    });
 
     // Initially, show the first page and hide the others
     document.getElementById('page1').style.display = 'block';

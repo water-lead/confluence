@@ -11,31 +11,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://avatars.githubusercontent.com/u/148636323?s=48&v=4" type="image/x-icon"
-        sizes="32x32">
-    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/148636323?s=48&v=4" type="image/x-icon" sizes="32x32">
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/5.0.0/firebaseui.css" />
+    <!-- Firebase scripts ... remain unchanged -->
+ <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
 
     <!-- Add Firebase products that you want to use -->
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
-
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/5.0.0/firebaseui.css" />
     <script src="https://cdn.firebase.com/libs/firebaseui/5.0.0/firebaseui.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
-
-
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
 </head>
 
 <body>
     <!-- Background Video -->
     <div class="desktop-v">
-        <video id="video-bg" autoplay muted loop>
+        <video id="video-bg-desktop" autoplay muted loop>
             <source src="background-video.mp4" type="video/mp4">
         </video>
     </div>
     <div class="mobile-v">
-        <video id="video-bg" autoplay muted loop>
+        <video id="video-bg-mobile" autoplay muted loop>
             <source src="background-video-m.mp4" type="video/mp4">
         </video>
     </div>
@@ -50,22 +47,20 @@
             <li><a href="mailto:bmosuro@waterdesigns.io">CONTACT</a></li>
         </ul>
     </nav>
-    
+
     <div class="landing-content">
         <!-- Landing Page Content -->
         <section class="landing-section" id="landing">
-                <div id="firebaseui-auth-container">
+            <div id="firebaseui-auth-container">
                 <div class="centered">
-                  <button id="startButton" class="transformable-button" onclick="transformToEmailForm()">
-    START
-                      <div class="transformable-button">
-    <form id="emailForm">
-        <input type="email" id="emailInput" placeholder="Enter your email" required>
-    </form>
-                          </div>
-</button>
+                    <button id="startButton" class="transformable-button">START</button>
+                    <div class="transformable-button-content">
+                        <form id="emailForm">
+                            <input type="email" id="emailInput" placeholder="Enter your email" required>
+                        </form>
+                    </div>
                 </div>
-    </div>
+            </div>
         </section>
     </div>
 

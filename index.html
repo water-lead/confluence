@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://avatars.githubusercontent.com/u/148636323?s=48&v=4" type="image/icon type"
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/148636323?s=48&v=4" type="image/x-icon"
         sizes="32x32">
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
@@ -19,6 +19,9 @@
     <!-- Add Firebase products that you want to use -->
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/5.0.0/firebaseui.css" />
+    <script src="https://cdn.firebase.com/libs/firebaseui/5.0.0/firebaseui.js"></script>
 
 </head>
 
@@ -50,7 +53,9 @@
         <!-- Landing Page Content -->
         <section class="landing-section" id="landing">
             <div class="centered">
-                <button onclick="authentication(1)">START HERE</button>
+                <div id="firebaseui-auth-container">
+                    <button onclick="authentication(1)">START HERE</button>
+                </div>
             </div>
         </section>
 

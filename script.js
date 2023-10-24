@@ -45,7 +45,7 @@ function authenticateUser() {
     });
 }
 
-let currentPage = 1;
+let currentPage = 0;
 
 function showNextPage(nextPage) {
     document.getElementById('page' + currentPage).style.display = 'none';
